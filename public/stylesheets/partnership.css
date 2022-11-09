@@ -1,0 +1,38 @@
+/* =============== Banner Section =============== */
+
+.partnership .banner {
+  height: 600px;
+  padding-top: 8rem;
+  background-color: var(--green);
+  background: url('/img/banner-partnership.png') center/cover no-repeat;
+  color: white;
+}
+
+.partnership .banner__title {
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.8rem;
+  font-weight: bold;
+  font-size: 4rem;
+}
+
+.partnership .banner__excerpt {
+  margin-bottom: 2rem;
+}
+
+.partnership .banner__action-btn {
+  background-color: var(--green);
+  border-color: var(--green);
+}
+
+/* =============== Partners Logo =============== */
+
+.partnership .partners__title {
+  text-align: center;
+  color: var(--green);
+}
+
+.partnership .partners__logo {
+  position: relative;
+  top: -100px;
+}
