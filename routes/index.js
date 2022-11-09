@@ -8,7 +8,11 @@ const router = express.Router();
 
 router.get('/', controller.index);
 
-router.get('/about', controller.about);
+router.get('/company-profile', controller.companyProfile);
+
+router.get('/services', controller.services);
+
+router.get('/partnership', controller.partnership);
 
 router.get('/contact', controller.contact);
 
