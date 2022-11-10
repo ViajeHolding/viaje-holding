@@ -8,12 +8,13 @@
   color: white;
 }
 
-.partnership .banner__title {
+.partnership h1.banner__title {
   margin-bottom: 1rem;
   text-transform: uppercase;
-  letter-spacing: 0.8rem;
+  letter-spacing: 0.4rem;
   font-weight: bold;
   font-size: 4rem;
+  color: white;
 }
 
 .partnership .banner__excerpt {
@@ -27,6 +28,10 @@
 
 /* =============== Partners Logo =============== */
 
+.partnership .partners .row:nth-child(2) .col {
+  text-align: center;
+}
+
 .partnership .partners__title {
   text-align: center;
   color: var(--green);
@@ -35,4 +40,23 @@
 .partnership .partners__logo {
   position: relative;
   top: -100px;
+  width: 100%;
+}
+
+/* =============== Breakpoints =============== */
+
+@media screen and (max-width: 992px) {
+  .partnership h1.banner__title {
+    font-size: 3rem;
+  }
+
+  .partnership .partners__logo {
+    top: -50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .partnership .partners__logo {
+    top: -30px;
+  }
 }

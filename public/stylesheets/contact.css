@@ -8,12 +8,13 @@
   color: white;
 }
 
-.contact .banner__title {
+.contact h1.banner__title {
   margin-bottom: 1rem;
   text-transform: uppercase;
-  letter-spacing: 0.8rem;
+  letter-spacing: 0.4rem;
   font-weight: bold;
   font-size: 4rem;
+  color: white;
 }
 
 .contact .banner__excerpt {
@@ -26,6 +27,10 @@
 }
 
 /* =============== Contact Info Section =============== */
+
+.contact .contact-info {
+  margin-bottom: 25rem;
+}
 
 .contact .contact-info__item-title {
   color: var(--green);

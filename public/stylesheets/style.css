@@ -1,17 +1,124 @@
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@600;800&display=swap');
 
-body{
-    font-family: Sora, "sans-serif";
-}
-
-.hero{
-   background-image: url(../img/BANNER\ COMPANY\ PROFILE.png);
-}
-
 :root {
   --green: #57ba35;
+  --primary: #0d6efd;
+  --dark: #21252f;
+  --body: #888;
+  --box-shadow: 0 8px 22px rgba(0, 0, 0, 0, 1);
+}
+
+body {
+  font-family: Sora, 'sans-serif';
+}
+
+.hero {
+  background-image: url(../img/BANNER\ COMPANY\ PROFILE.png);
 }
 
 .page-section {
   margin-bottom: 5rem;
+}
+
+/* =============== Page footer =============== */
+
+.page-footer {
+  margin-top: 5rem;
+  padding: 2rem 0;
+  background-color: var(--dark);
+  color: white;
+}
+
+.page-footer .row:nth-child(1) {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid white;
+}
+
+.page-footer__logo {
+  display: block;
+  width: 180px;
+  height: auto;
+  margin-bottom: 0.8rem;
+}
+
+.page-footer__title {
+  font-size: 1.3rem;
+  color: white;
+}
+
+.page-footer__navigation-list {
+  list-style: none;
+  padding: 0;
+}
+
+.page-footer__navigation-link {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  transition: color 200ms ease-out;
+}
+
+.page-footer__navigation-link:hover {
+  color: white;
+}
+
+.page-footer__app-download {
+  text-align: center;
+}
+
+.page-footer__app-download-icon {
+  width: 150px;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
+.page-footer__social-media {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.page-footer__social-media-item {
+  margin-left: 1rem;
+  background-color: white;
+  border-radius: 50%;
+}
+
+/* =============== Breakpoints =============== */
+
+/* 
+  - 576
+  - 768
+  - 992
+  - 1200
+  - 1400
+*/
+
+@media screen and (max-width: 992px) {
+  .page-footer__title {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .page-footer__info {
+    margin-bottom: 2rem;
+  }
+
+  .page-footer__app-download {
+    text-align: left;
+  }
+
+  .page-footer__social-media {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .page-footer__info {
+    margin-bottom: 0;
+  }
+
+  .page-footer__section:not(:last-child) {
+    margin-bottom: 1rem;
+  }
 }

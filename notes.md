@@ -17,7 +17,12 @@ Finished item will be marked as done.
   - Brand
   - Color
   - Typeface
+- Footer
+  - Viaje logo use image but white color.
 
 ## Back-end
 
 - Multi-language support. Dedicated route per language.
+- Change routes: (Don't forget about the file names and file coupling.)
+  - 'company-profile' to 'profile'.
+  - 'services' to 'service'.
