@@ -1,0 +1,31 @@
+.home .banner {
+  position: relative;
+}
+
+.home .banner__info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+  /* height: 100%; */
+  width: 50%;
+  padding-top: 8rem;
+  color: white;
+}
+
+.home .banner__info-headline {
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  font-size: 4.5rem;
+  font-weight: bold;
+  letter-spacing: 0.4rem;
+}
+
+.home .banner__info-excerpt {
+  text-align: justify;
+  text-justify: inter-word;
+}
