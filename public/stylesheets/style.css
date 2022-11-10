@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@600;800&display=swap');
+
+body{
+    font-family: Sora, "sans-serif";
+}
+
+.hero{
+   background-image: url(../img/BANNER\ COMPANY\ PROFILE.png);
+} 
