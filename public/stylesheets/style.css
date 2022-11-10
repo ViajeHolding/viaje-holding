@@ -6,4 +6,12 @@ body{
 
 .hero{
    background-image: url(../img/BANNER\ COMPANY\ PROFILE.png);
-} 
+}
+
+:root {
+  --green: #57ba35;
+}
+
+.page-section {
+  margin-bottom: 5rem;
+}

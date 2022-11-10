@@ -1,0 +1,116 @@
+/* =============== Banner Section =============== */
+
+.services .banner {
+  height: 600px;
+  padding-top: 8rem;
+  background-color: var(--green);
+  background: url('/img/banner-service.png') center/cover no-repeat;
+  color: white;
+}
+
+.services .banner__title {
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.8rem;
+  font-weight: bold;
+  font-size: 4rem;
+}
+
+.services .banner__excerpt {
+  margin-bottom: 2rem;
+}
+
+.services .banner__action-btn {
+  background-color: var(--green);
+  border-color: var(--green);
+}
+
+/* =============== Service Section =============== */
+
+.services .service .row {
+  justify-content: space-between;
+}
+
+.services .service__info-title {
+  margin-bottom: 2rem;
+  color: var(--green);
+}
+
+.services .service__art-img {
+  width: 100%;
+  height: 300px;
+  background-color: var(--green);
+}
+
+/* =============== Bike Showcase Section =============== */
+
+.services .bike-showcase {
+  margin-bottom: 8rem;
+}
+
+.services .bike-showcase__header {
+  text-align: center;
+}
+
+.services .bike-showcase__title {
+  color: var(--green);
+}
+
+.services .bike-showcase__img {
+  margin-bottom: 2rem;
+}
+
+.services .bike-showcase__img img {
+  display: block;
+  width: 60%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.services .bike-showcase__features-item {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  background-color: var(--green);
+  border-radius: 50%;
+}
+
+/* =============== Easy Payment Section =============== */
+
+.services .easy-payment {
+  margin-bottom: 0;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  background-color: var(--green);
+  background: url('/img/viapoint-service.png') no-repeat;
+  background-position: -120% 45%;
+}
+
+.services .easy-payment__info {
+  text-align: right;
+}
+
+.services .easy-payment__info-title {
+  margin-bottom: 1.5rem;
+  color: var(--green);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* =============== Metaverse Section =============== */
+
+.services .metaverse {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  background-color: var(--green);
+  background: url('/img/service-icon-metaverse.png') no-repeat;
+  background-position: 100% 45%;
+  background-size: 47%;
+}
+
+.services .metaverse__info-title {
+  margin-bottom: 1.5rem;
+  color: var(--green);
+  text-transform: uppercase;
+  font-weight: bold;
+}
