@@ -1,7 +1,31 @@
-<%- include('partials/header.ejs') %> <%- include('partials/navbar.ejs') %>
+<% const { navbar, home: {
+  title,
+  excerpt,
+} } = data; %>
 
-<div class="container">
-  <h1 class="display-1">Home page</h1>
-</div>
+<%- include('partials/header.ejs') %> <%- include('partials/navbar.ejs', { lang, data: navbar }) %>
 
-<%- include('partials/footer.ejs') %>
+<body class="home">
+  <section class="banner">
+    <div class="banner__carousel carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="/img/home-banner-01.png" class="banner__carousel-image d-block w-100" alt="Home Banner 01">
+        </div>
+        <div class="carousel-item">
+          <img src="/img/home-banner-02.png" class="banner__carousel-image d-block w-100" alt="Home Banner 02">
+        </div>
+        <div class="carousel-item">
+          <img src="/img/home-banner-03.png" class="banner__carousel-image d-block w-100" alt="Home Banner 03">
+        </div>
+      </div>
+    </div>
+
+    <div class="banner__info container-fluid">
+      <h1 class="banner__info-headline"><%- title %></h1>
+
+      <p class="banner__info-excerpt"><%- excerpt %></p>
+    </div>
+  </section>
+
+<%- include('partials/footer.ejs', { lang }) %>

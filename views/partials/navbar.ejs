@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg py-3 sticky-top navbar-red bg-white ">
   <div class="container">
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="/lang/<%= lang %>">
       <img class="logo" src="/img/viaje-holdings-green.png" alt="logo">
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -9,19 +9,19 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         <li class="nav-item text-lowercase">
-          <a class="nav-link" href="/">Home</a>
+          <a class="nav-link" href="/<%= lang %>/home"><%= data.home %></a>
         </li>
         <li class="nav-item text-lowercase">
-          <a class="nav-link" href="/company-profile">Profile</a>
+          <a class="nav-link" href="/<%= lang %>/profile"><%= data.profile %></a>
         </li>
         <li class="nav-item text-uppercase">
-          <a class="nav-link" href="/services">Services</a>
+          <a class="nav-link" href="/<%= lang %>/service"><%= data.service %></a>
         </li>
         <li class="nav-item text-uppercase">
-          <a class="nav-link" href="/partnership">Partnership</a>
+          <a class="nav-link" href="/<%= lang %>/partnership"><%= data.partnership %></a>
         </li>
         <li class="nav-item text-uppercase">
-          <a class="nav-link" href="/contact">Contact</a>
+          <a class="nav-link" href="/<%= lang %>/contact"><%= data.contact %></a>
         </li>
         <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
           <ul class="navbar-nav">

@@ -1,15 +1,19 @@
-<%- include('partials/header.ejs') %> <%- include('partials/navbar.ejs') %>
+<% const { navbar, contact: {
+  banner
+} } = data; %>
+
+<%- include('partials/header.ejs') %> <%- include('partials/navbar.ejs', { lang, data: navbar }) %>
 
 <body class="contact">
   <section class="banner page-section">
     <div class="container">
       <div class="row">
-        <div class="col-6">
-          <h1 class="banner__title">Contact</h1>
+        <div class="col-12 col-md-8 col-lg-6">
+          <h1 class="banner__title"><%- banner.title %></h1>
       
-          <p class="banner__excerpt">We would be happy to hear your feedbacks, thoughts, and problems regarding our service</p>
+          <p class="banner__excerpt"><%- banner.excerpt %></p>
       
-          <button type="button" class="banner__action-btn btn btn-primary">Learn More</button>
+          <button type="button" class="banner__action-btn btn btn-primary"><%- banner.button %></button>
         </div>
       </div>
     </div>
@@ -26,4 +30,4 @@
     </div>
   </section>
 
-<%- include('partials/footer.ejs') %>
+<%- include('partials/footer.ejs', { lang }) %>

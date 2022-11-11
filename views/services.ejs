@@ -1,33 +1,41 @@
-<%- include('partials/header.ejs') %> <%- include('partials/navbar.ejs') %>
+<% const { navbar, service: {
+  banner,
+  introduction,
+  bikeShowcase,
+  easyPayment,
+  metaverse,
+} } = data; %>
+
+<%- include('partials/header.ejs') %> <%- include('partials/navbar.ejs', { lang, data: navbar }) %>
 
 <body class="services">
   <section class="banner page-section">
     <div class="container">
       <div class="row">
-        <div class="col-6">
-          <h1 class="banner__title text-white">Service</h1>
+        <div class="col-12 col-md-8 col-lg-6">
+          <h1 class="banner__title"><%= banner.title %></h1>
       
-          <p class="banner__excerpt">Carbon-Free VIAJE provides Eco-Content Services such as a Rental Business of EV Mobility, Metaverse Service, and payments regarding VIA POINT so that many people can contribute to Environmental Protection.</p>
+          <p class="banner__excerpt"><%- banner.excerpt %></p>
       
-          <button type="button" class="banner__action-btn btn btn-primary">Learn More</button>
+          <button type="button" class="banner__action-btn btn btn-primary"><%= banner.button %></button>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="service container page-section">
+  <section class="introduction container page-section">
     <div class="row">
-      <div class="col-8">
-        <div class="service__info">
-          <h2 class="service__info-title">Electric Motorcycle and Bicycle Rental</h2>
+      <div class="col-md-7">
+        <div class="introduction__info">
+          <h2 class="introduction__info-title"><%= introduction.title %></h2>
     
-          <p class="service__info-excerpt">The very first Rental Business of EV Mobility will be starting in Bali. Carbon-Free VIAJE contributed not only to give convenience to tourism for tourists but also to &apos;Carbon-Free&apos;, which reduces carbon- dioxide in internal combustion engines and provides a variety of services for Value Consumption and Eco-Friendly travels.</p>
+          <p class="introduction__info-excerpt"><%- introduction.body %></p>
         </div>
       </div>
 
-      <div class="col-3">
-        <div class="service__art">
-          <div class="service__art-img"></div>
+      <div class="col-md-5">
+        <div class="introduction__art">
+          <img src="/img/service-icon-globe.png" alt="Green Globe" class="introduction__art-img" />
         </div>
       </div>
     </div>
@@ -37,8 +45,8 @@
     <div class="row">
       <div class="col">
         <div class="bike-showcase__header">
-          <h2 class="bike-showcase__title">A Variety of Bikes</h2>
-          <p class="bike-showcase__subtitle">Choose your own bikes that suits your taste</p>
+          <h2 class="bike-showcase__title"><%= bikeShowcase.title %></h2>
+          <p class="bike-showcase__subtitle"><%= bikeShowcase.subtitle %></p>
         </div>
       </div>
     </div>
@@ -52,29 +60,20 @@
     </div>
 
     <div class="row bike-showcase__features">
-      <div class="col-4">
-        <div class="bike-showcase__features-item"></div>
-      </div>
-      <div class="col-4">
-        <div class="bike-showcase__features-item"></div>
-      </div>
-      <div class="col-4">
-        <div class="bike-showcase__features-item"></div>
-      </div>
+      <img src="/img/service-icon-bike-features.png" alt="Viaje Bike Features" class="bike-showcase__features-icons" />
     </div>
-
   </section>
 
   <section class="easy-payment page-section">
     <div class="container">
       <div class="row">
-        <div class="col-5"></div>
+        <div class="col-12 col-md-5"></div>
   
-        <div class="col-7">
+        <div class="col-12 col-md-7">
           <div class="easy-payment__info">
-            <h2 class="easy-payment__info-title">Easy Payment</h2>
+            <h2 class="easy-payment__info-title"><%= easyPayment.title %></h2>
       
-            <p class="easy-payment__info-excerpt">Payment method using VIA POINT and get an additional discount in our partner&apos;s shop. The VIA POINT used will be measured and converted into the Carbon Reduction Value and rewards will be given to the users and partners. The rewards given could only be used for Eco-Friendly services which is only available in our Partner&apos;s shops.</p>
+            <p class="easy-payment__info-excerpt"><%- easyPayment.body %></p>
           </div>
         </div>
       </div>
@@ -84,16 +83,17 @@
   <section class="metaverse page-section">
     <div class="container">
       <div class="row">
-        <div class="col-7">
+        <div class="col-12 col-md-7">
           <div class="metaverse__info">
-            <h2 class="metaverse__info-title">Metaverse</h2>
+            <h2 class="metaverse__info-title"><%= metaverse.title %></h2>
       
-            <p class="metaverse__info-excerpt">META VIAJE implemented Korea&apos;s largest K-pop concert, Dream Concert in metaverse, performing in real time through motion capture technology, and conducting the first offline performance and online metaverse live broadcast. We Carbon-Free VIAJE would like to carry out an inflow and Eco-Friendly campaign</p>
+            <p class="metaverse__info-excerpt"><%- metaverse.body %></p>
           </div>
         </div>
-        <div class="col-5"></div>
+
+        <div class="col-12 col-md-5"></div>
       </div>
     </div>
   </section>
 
-<%- include('partials/footer.ejs') %>
+<%- include('partials/footer.ejs', { lang }) %>

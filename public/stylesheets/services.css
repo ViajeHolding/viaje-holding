@@ -8,12 +8,13 @@
   color: white;
 }
 
-.services .banner__title {
+.services h1.banner__title {
   margin-bottom: 1rem;
   text-transform: uppercase;
-  letter-spacing: 0.8rem;
+  letter-spacing: 0.4rem;
   font-weight: bold;
   font-size: 4rem;
+  color: white;
 }
 
 .services .banner__excerpt {
@@ -25,21 +26,25 @@
   border-color: var(--green);
 }
 
-/* =============== Service Section =============== */
+/* =============== Introduction Section =============== */
 
-.services .service .row {
+.services .introduction .row {
   justify-content: space-between;
+  align-items: center;
 }
 
-.services .service__info-title {
+.services .introduction__info-title {
   margin-bottom: 2rem;
   color: var(--green);
 }
 
-.services .service__art-img {
-  width: 100%;
-  height: 300px;
-  background-color: var(--green);
+.services .introduction__art {
+  text-align: center;
+}
+
+.services .introduction__art-img {
+  width: 70%;
+  height: auto;
 }
 
 /* =============== Bike Showcase Section =============== */
@@ -67,12 +72,9 @@
   margin: 0 auto;
 }
 
-.services .bike-showcase__features-item {
-  width: 100px;
-  height: 100px;
+.services .bike-showcase__features-icons {
+  width: 80%;
   margin: 0 auto;
-  background-color: var(--green);
-  border-radius: 50%;
 }
 
 /* =============== Easy Payment Section =============== */
@@ -83,7 +85,7 @@
   padding-bottom: 10rem;
   background-color: var(--green);
   background: url('/img/viapoint-service.png') no-repeat;
-  background-position: -120% 45%;
+  background-position: -300px 45%;
 }
 
 .services .easy-payment__info {
@@ -113,4 +115,75 @@
   color: var(--green);
   text-transform: uppercase;
   font-weight: bold;
+}
+
+/* =============== Breakpoints =============== */
+
+@media screen and (max-width: 1200px) {
+  .services .easy-payment {
+    background-position: -400px 45%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .services h1.banner__title {
+    font-size: 3rem;
+  }
+
+  .services .introduction__art-img {
+    width: 80%;
+  }
+
+  .services .easy-payment {
+    background-position: -450px 45%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .services .introduction .row > div:nth-child(1) {
+    order: 2;
+  }
+
+  .services .introduction .row > div:nth-child(2) {
+    order: 1;
+  }
+
+  .services .introduction__art {
+    margin-bottom: 1rem;
+  }
+
+  .services .introduction__art-img {
+    width: 60%;
+  }
+
+  .services .bike-showcase__img img {
+    width: 80%;
+  }
+
+  .services .bike-showcase__features-icons {
+    width: 100%;
+  }
+
+  .services .easy-payment {
+    background: none;
+    margin-bottom: 5rem;
+    padding: 0;
+  }
+
+  .services .easy-payment__info {
+    text-align: left;
+  }
+
+  .services .metaverse {
+    background: none;
+    margin-bottom: 5rem;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .services h1.banner__title {
+    font-size: 2rem;
+    letter-spacing: 0.3rem;
+  }
 }
