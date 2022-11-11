@@ -21,7 +21,34 @@ module.exports = {
     excerpt:
       'Carbon-Free VIAJE is an Eco-Friendly ESG investment and management company that provides travel and cultural contents and handling a metaverse service fused with the 4th industry by developing an online streaming service with both online and offline audiences',
   },
-  profile: {},
+  profile: {
+    banner: {
+      title: ['Company', 'Profile'],
+      excerpt:
+        'Carbon-Free VIAJE is an Eco-Friendly ESG investment and management company that provides travel and cultural contents and handling a metaverse service fused with the 4th industry by developing an online streaming service with both online and offline audiences.',
+      quote:
+        'All used value of VIA POINTS by the users and partners are expressed as a Carbon Storage Value and used to protect the environment.',
+      button: 'Learn More',
+    },
+    companyProfile: {
+      title: 'Company Profile',
+      body: [
+        'Carbon-Free VIAJE is an Eco-Friendly ESG investment and management company that provides travel and cultural contents and handling a metaverse service fused with the 4th industry by developing an online streaming service with both online and offline audiences.',
+        'Carbon-Free VIAJE has a slogan of "Reduce Your Carbon" meaning, all used value of VIA POINTS by the users and partners will be converted and expressed as a Carbon Storage Value. Taking action to protect the environment just by renting electric motorcycles and bicycles by showing the carbon they have reduced is the prove of participating in the Carbon-Free VIAJE&apos;s Eco-Friendly Project and a part in the Carbon-Free VIAJE&apos;s Ecosystem.',
+      ],
+    },
+    viajeProject: {
+      title: 'Viaje Project',
+      body: 'The first step of this project is to provide a platform to conduct Eco-Friendly business in Bali, the beautiful island of Indonesia with Rental Business of Electric Motorcycles and Bicycles',
+    },
+    businessModel: {
+      title: 'Business Model',
+      body: 'Based on the Eco-Friendly ESG Strategy, we participate in the Carbon-Neutral Policy through IT technology fused with the 4th industry, so that customers&apos; value consumption can contribute to environmental protection.',
+    },
+    viajeGroupCompanies: {
+      title: 'Viaje Group Companies',
+    },
+  },
   service: {
     banner: {
       title: 'Service',

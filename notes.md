@@ -34,3 +34,4 @@ Finished item will be marked as done. ✅
 - Change routes: (Don't forget about the file names and file coupling.)
   - 'company-profile' to 'profile'.
   - 'services' to 'service'.
+- Lang data middleware.

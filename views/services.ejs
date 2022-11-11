@@ -41,7 +41,7 @@
     </div>
   </section>
 
-  <section class="bike-showcase page-section container">
+  <section class="bike-showcase container page-section">
     <div class="row">
       <div class="col">
         <div class="bike-showcase__header">
@@ -60,7 +60,9 @@
     </div>
 
     <div class="row bike-showcase__features">
-      <img src="/img/service-icon-bike-features.png" alt="Viaje Bike Features" class="bike-showcase__features-icons" />
+      <% const serviceIconName = lang === 'en' ? 'service-icon-bike-features-en.png' : 'service-icon-bike-features-id.png' %>
+
+      <img src="/img/<%= serviceIconName %>" alt="Viaje Bike Features" class="bike-showcase__features-icons" />
     </div>
   </section>
 

@@ -1,123 +1,113 @@
-<% const { navbar } = data; %>
+<% const { navbar, profile: {
+  banner,
+  companyProfile,
+  viajeProject,
+  businessModel,
+  viajeGroupCompanies,
+} } = data; %>
 
 <%- include('partials/header.ejs') %> <%- include('partials/navbar.ejs', { lang, data: navbar }) %>
 
-<!-- HERO -->
+<body class="page-profile">
+  <!-- HERO -->
 
-<div class="hero vh-100 d-flex align-items-center page-section">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-7">
-        <h1 class="display-4 text-white">COMPANY</h1>
-        <h2 class="display-4 text-white">PROFILE</h2>
-        <p class="text-white my-3">Carbon-Free VIAJE is an Eco Friendly ESG Strategy Company,
-          participating in the Carbon – Neutral Policy through IT Techn
-          ology fused with the 4th industry so that customers’ value c
-          onsumption can contribute to Environmental Protection.</p>
-          <p class="text-white">“All used value of VIA POINTS by the users and partners a
-            re expressed as a Carbon Storage Value and used to protec
-            t the environment.”
-            </p>
-          <a href="#" class="btn btn-primary">Learn More</a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- HERO -->
-
-
-<!-- COMPANY PROFILE -->
-
-<section id="viaje" class="page-section">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-md-8">
-        <h4 class="text1">COMPANY PROFILE</h4>
-        <p class="small">Carbon-Free VIAJE is an Eco-Friendly ESG investment and management
-          company that provides travel and cultural contents and handling a
-          metaverse service fused with the 4th industry by developing an online
-          streaming service with both online and offline audiences.</p>
-        <p class="small">Carbon-Free VIAJE has a slogan of “Reduce Your Carbon” meaning, all used
-          value of VIA POINTS by the users and partners will be converted and
-          expressed as a Carbon Storage Value. Taking action to protect the
-          environment just by renting electric motorcycles and bicycles by showing the
-          carbon they have reduced is the prove of participating in the Carbon-Free
-          VIAJE’s Eco-Friendly Project and a part in the Carbon-Free VIAJE’s Eco</p>
-      </div>
-      <div class="col-lg-4 col-img"></div>
-    </div>
-  </div>
-
-</section>
-
-
-<!-- viaje-project -->
-<section class="project page-section" id="viaje-project">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-md-8 mx-auto text-center">
-        <h4 class="text2">VIAJE PROJECT</h4>
-        <p class="small">The first step of this project is to provide a platform to
-          conduct Eco-Friendly business in Bali, the beautiful island
-          of Indonesia with Rental Business of Electric Motorcycles
-          and Bicycles</p>
-      </div>
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-4">
-            <img class="img-fluid" src="/img/viaje phone company profile.png"/>
-          </div>
-          <div class="col-md-4">
-            <img class="img-fluid" src="/img/icon 2.png"/>
-          </div>
-        </div>
-      </div>
-      
-    </div>
-  </div>
-</section>
-
-<!-- BUSINESS MODEL -->
-
-<section id="business-model">
+  <div class="hero vh-100 d-flex align-items-center page-section">
     <div class="container">
       <div class="row">
-        <div class="col-md-8 mx-auto text-center">
-          <h4 class="text3">BUSINESS MODEL</h4>
-        </div>
-         <div class="row">
-          <div class="col-4 mx-auto d-flex">
-            <img class="icon3" src="/img/icon 3.png" alt="">
-          </div>
-         </div>
-         <div class="col-md-8 mx-auto text-center">
-          <p class="small">Based on the Eco-Friendly ESC Strategy. We participate in the Carbon-Neutral Policy through IT technology fused with the 4th industry. So that costumers value Consumption can contribute to environmental protection </p>
+        <div class="col-lg-7">
+          <h1 class="display-4 text-white"><%- banner.title[0] %></h1>
+          <h2 class="display-4 text-white"><%- banner.title[1] %></h2>
+          <p class="text-white my-3"><%- banner.excerpt %></p>
+          <p class="text-white">"<%- banner.quote %>"</p>
+          <a href="#" class="btn btn-primary"><%- banner.button %></a>
         </div>
       </div>
-    </div>
-</section>
-
-<!-- BUSINESS MODEL -->
-
-<!-- viaje group companies -->
-
-<section id="viaje-group">
-  <div class="container">
-    <div class="row">
-      <div class=" mx-auto text-center col-md-8">
-        <h4 class="text4">VIAJE GROUP COMPANIES</h4>
-      </div>
-      <div class="row">
-        <div class="col-4 mx-auto d-flex">
-          <img class="group" src="/img/viaje foundation logo png.png" alt="">
-        </div>
-      </div>
-      
     </div>
   </div>
-</section>
 
-<!-- viaje group companies -->
+  <!-- HERO -->
+
+
+  <!-- COMPANY PROFILE -->
+
+  <section id="viaje" class="page-section">
+    <div class="container">
+      <div class="row justify-content-between align-items-center">
+        <div class="col-md-7">
+          <h4 class="text1"><%- companyProfile.title %></h4>
+          <p class="small"><%- companyProfile.body[0] %></p>
+          <p class="small"><%- companyProfile.body[1] %></p>
+        </div>
+        <div class="col-lg-4 col-img"></div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- viaje-project -->
+  <section class="project page-section" id="viaje-project">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-8 mx-auto text-center">
+          <h4 class="text2"><%- viajeProject.title %></h4>
+          <p class="small"><%- viajeProject.body %></p>
+        </div>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-4">
+              <img class="img-fluid profile-image" src="/img/viaje phone company profile.png"/>
+            </div>
+            <div class="col-md-4">
+              <img class="img-fluid profile-image" src="/img/icon 2.png"/>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- BUSINESS MODEL -->
+
+  <section id="business-model">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 mx-auto text-center">
+            <h4 class="text3"><%- businessModel.title %></h4>
+          </div>
+          <div class="row">
+            <div class="col-4 mx-auto d-flex">
+              <img class="icon3 profile-image" src="/img/icon 3.png" alt="">
+            </div>
+          </div>
+          <div class="col-md-8 mx-auto text-center">
+            <p class="small"><%- businessModel.body %></p>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- BUSINESS MODEL -->
+
+  <!-- viaje group companies -->
+
+  <section id="viaje-group">
+    <div class="container">
+      <div class="row">
+        <div class=" mx-auto text-center col-md-8">
+          <h4 class="text4"><%- viajeGroupCompanies.title %></h4>
+        </div>
+        <div class="row">
+          <div class="col-4 mx-auto d-flex">
+            <img class="group profile-image" src="/img/viaje foundation logo png.png" alt="">
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- viaje group companies -->
 
 <%- include('partials/footer.ejs', { lang }) %>
