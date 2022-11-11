@@ -1,0 +1,35 @@
+.navbar.nav-link {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+.navbar{    
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+
+.navbar-red{
+    background:#fff;
+    height:80px;
+    box-shadow:0px 2px 5px rgba(119, 119, 119, 0.719);
+    
+}
+img.logo{
+    width: 200px;
+    height: 200px;
+}
+.nav-link{
+    color:black;
+    font-size: 1.0rem;
+    margin: 8px;
+}
+.navbar-brand{
+    font-family: viga;
+    font-size: 32px;
+}
+
+

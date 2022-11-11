@@ -4,10 +4,6 @@ body{
     font-family: Sora, "sans-serif";
 }
 
-.hero{
-   background-image: url(../img/BANNER\ COMPANY\ PROFILE.png);
-}
-
 :root {
   --green: #57ba35;
 }
@@ -15,3 +11,4 @@ body{
 .page-section {
   margin-bottom: 5rem;
 }
+
