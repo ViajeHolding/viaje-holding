@@ -26,23 +26,23 @@
   border-color: var(--green);
 }
 
-/* =============== Service Section =============== */
+/* =============== Introduction Section =============== */
 
-.services .service .row {
+.services .introduction .row {
   justify-content: space-between;
   align-items: center;
 }
 
-.services .service__info-title {
+.services .introduction__info-title {
   margin-bottom: 2rem;
   color: var(--green);
 }
 
-.services .service__art {
+.services .introduction__art {
   text-align: center;
 }
 
-.services .service__art-img {
+.services .introduction__art-img {
   width: 70%;
   height: auto;
 }
@@ -130,7 +130,7 @@
     font-size: 3rem;
   }
 
-  .services .service__art-img {
+  .services .introduction__art-img {
     width: 80%;
   }
 
@@ -140,19 +140,19 @@
 }
 
 @media screen and (max-width: 768px) {
-  .services .service .row > div:nth-child(1) {
+  .services .introduction .row > div:nth-child(1) {
     order: 2;
   }
 
-  .services .service .row > div:nth-child(2) {
+  .services .introduction .row > div:nth-child(2) {
     order: 1;
   }
 
-  .services .service__art {
+  .services .introduction__art {
     margin-bottom: 1rem;
   }
 
-  .services .service__art-img {
+  .services .introduction__art-img {
     width: 60%;
   }
 
@@ -178,5 +178,12 @@
     background: none;
     margin-bottom: 5rem;
     padding: 0;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .services h1.banner__title {
+    font-size: 2rem;
+    letter-spacing: 0.3rem;
   }
 }

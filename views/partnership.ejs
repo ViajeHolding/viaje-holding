@@ -1,15 +1,20 @@
-<%- include('partials/header.ejs') %> <%- include('partials/navbar.ejs') %>
+<% const { navbar, partnership: {
+  banner,
+  partners
+} } = data; %>
+
+<%- include('partials/header.ejs') %> <%- include('partials/navbar.ejs', { lang, data: navbar }) %>
 
 <body class="partnership">
   <section class="banner page-section">
     <div class="container">
       <div class="row">
         <div class="col-12 col-md-8 col-lg-6">
-          <h1 class="banner__title">Partnership</h1>
+          <h1 class="banner__title"><%= banner.title %></h1>
       
-          <p class="banner__excerpt">Carbon-Free VIAJE collaborated with various local companies in Bali and as well as Korean companies to expand the business globally and provide the best service to the people in the VIAJE&apos;s Eco-system.</p>
+          <p class="banner__excerpt"><%- banner.excerpt %></p>
       
-          <button type="button" class="banner__action-btn btn btn-primary">Learn More</button>
+          <button type="button" class="banner__action-btn btn btn-primary"><%= banner.button %></button>
         </div>
       </div>
     </div>
@@ -18,7 +23,7 @@
   <section class="partners container">
     <div class="row">
       <div class="col">
-        <h2 class="partners__title">Carbon-Free VIAJE&apos;s Partners</h2>
+        <h2 class="partners__title"><%- partners.title %></h2>
       </div>
     </div>
 
@@ -29,4 +34,4 @@
     </div>
   </section>
 
-<%- include('partials/footer.ejs') %>
+<%- include('partials/footer.ejs', { lang }) %>

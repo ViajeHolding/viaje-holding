@@ -2,15 +2,15 @@ const express = require('express');
 
 const controller = require('../controller/index.js');
 
-const router = express.Router();
+const router = express.Router({ mergeParams: true });
 
 /* ======================= Routes ======================= */
 
-router.get('/', controller.index);
+router.get('/home', controller.index);
 
-router.get('/company-profile', controller.companyProfile);
+router.get('/profile', controller.profile);
 
-router.get('/services', controller.services);
+router.get('/service', controller.service);
 
 router.get('/partnership', controller.partnership);
 

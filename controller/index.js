@@ -1,17 +1,32 @@
+const en = require('../data/languages/en.js');
+const id = require('../data/languages/id.js');
+
+const dict = { en, id };
+
 module.exports = {
   index(req, res) {
-    res.render('index');
+    const { lang } = req.params;
+
+    res.render('index', { lang, data: dict[lang] });
   },
-  companyProfile(req, res) {
-    res.render('company-profile');
+  profile(req, res) {
+    const { lang } = req.params;
+
+    res.render('company-profile', { lang, data: dict[lang] });
   },
-  services(req, res) {
-    res.render('services');
+  service(req, res) {
+    const { lang } = req.params;
+
+    res.render('services', { lang, data: dict[lang] });
   },
   partnership(req, res) {
-    res.render('partnership');
+    const { lang } = req.params;
+
+    res.render('partnership', { lang, data: dict[lang] });
   },
   contact(req, res) {
-    res.render('contact');
+    const { lang } = req.params;
+
+    res.render('contact', { lang, data: dict[lang] });
   },
 };

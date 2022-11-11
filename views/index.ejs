@@ -1,4 +1,9 @@
-<%- include('partials/header.ejs') %> <%- include('partials/navbar.ejs') %>
+<% const { navbar, home: {
+  title,
+  excerpt,
+} } = data; %>
+
+<%- include('partials/header.ejs') %> <%- include('partials/navbar.ejs', { lang, data: navbar }) %>
 
 <body class="home">
   <section class="banner">
@@ -17,10 +22,10 @@
     </div>
 
     <div class="banner__info container-fluid">
-      <h1 class="banner__info-headline">Reduce Your Carbon</h1>
+      <h1 class="banner__info-headline"><%- title %></h1>
 
-      <p class="banner__info-excerpt">Carbon-Free VIAJE is an Eco-Friendly ESG investment and management company that provides travel and cultural contents and handling a metaverse service fused with the 4th industry by developing an online streaming service with both online and offline audiences.</p>
+      <p class="banner__info-excerpt"><%- excerpt %></p>
     </div>
   </section>
 
-<%- include('partials/footer.ejs') %>
+<%- include('partials/footer.ejs', { lang }) %>
