@@ -1,4 +1,4 @@
-<% const { navbar, service: {
+<% const { navbar, footer, service: {
   banner,
   introduction,
   bikeShowcase,
@@ -9,15 +9,15 @@
 <%- include('partials/header.ejs') %> <%- include('partials/navbar.ejs', { lang, data: navbar }) %>
 
 <body class="services">
-  <section class="banner page-section">
+  <section class="banner page-banner page-section">
     <div class="container">
       <div class="row">
         <div class="col-12 col-md-8 col-lg-6">
-          <h1 class="banner__title"><%= banner.title %></h1>
+          <h1 class="banner__title page-banner__title"><%= banner.title %></h1>
       
-          <p class="banner__excerpt"><%- banner.excerpt %></p>
+          <p class="banner__excerpt page-banner__excerpt"><%- banner.excerpt %></p>
       
-          <button type="button" class="banner__action-btn btn btn-primary"><%= banner.button %></button>
+          <button type="button" class="banner__action-btn page-banner__action-btn primary-btn btn"><%= banner.button %></button>
         </div>
       </div>
     </div>
@@ -98,4 +98,4 @@
     </div>
   </section>
 
-<%- include('partials/footer.ejs', { lang }) %>
+<%- include('partials/footer.ejs', { lang, data: footer }) %>

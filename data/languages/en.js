@@ -13,7 +13,7 @@ module.exports = {
       title: 'Useful Links',
       contactUs: 'Contact Us',
       profile: 'Profile',
-      service: 'Service,',
+      service: 'Service',
     },
   },
   home: {

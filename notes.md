@@ -11,6 +11,7 @@ Finished item will be marked as done. ✅
 - Mobile layout. ✅
 - Partnership page headline text size. ✅
 - Primary button color.
+  - Button active state.
 - Note dari bu Kelly.
   - Update navbar text.
   - Banner excerpt home page to use justify alignment. ✅

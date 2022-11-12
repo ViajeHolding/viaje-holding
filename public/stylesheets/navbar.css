@@ -18,9 +18,10 @@
   height: 80px;
   box-shadow: 0px 2px 5px rgba(119, 119, 119, 0.719);
 }
+
 img.logo {
-  width: 200px;
-  height: 200px;
+  width: 180px;
+  height: auto;
 }
 
 .nav-link {
@@ -31,11 +32,6 @@ img.logo {
 
 .nav-link:hover {
   color: var(--green);
-}
-
-.navbar-brand {
-  font-family: viga;
-  font-size: 32px;
 }
 
 .navbar__lang-item {

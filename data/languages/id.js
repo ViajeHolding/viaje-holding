@@ -11,9 +11,9 @@ module.exports = {
       'Eco-Friendly companies, various technology companies, and customers who use the services into the Ecosystem to compose the VIAJE&apos;s Ecosystem.',
     navigation: {
       title: 'Useful Links',
-      contactUs: 'Contact Us',
-      profile: 'Profile',
-      service: 'Service,',
+      contactUs: 'Hubungi Kami',
+      profile: 'Profil',
+      service: 'Pelayanan',
     },
   },
   home: {
@@ -57,7 +57,7 @@ module.exports = {
       button: 'Pelajari Lebih',
     },
     introduction: {
-      title: 'Rental motor dan sepeda listrik',
+      title: 'Rental Motor dan Sepeda Listrik',
       body: 'Bisnis rental motor dan sepeda listrik akan dimulai pertama kali di Bali. Carbon-Free VIAJE tidak hanya berkontribusi untuk memberikan kenyamanan pariwisata bagi wisatawan tetapi juga dalam Pengurangan Karbon, yang mengurangi karbon dioksida dalam mesin pembakaran internal dan menyediakan berbagai layanan untuk perjalanan yang bernilai konsumsi dan Ramah Lingkungan. Jangan lewatkan kesempatan ini! Mari datang dan menikmati liburan Bersama kami.',
     },
     bikeShowcase: {

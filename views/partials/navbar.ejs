@@ -24,57 +24,53 @@
           <a class="nav-link <%- currentPage === 'contact' ? 'active' : '' %>" href="/<%= lang %>/contact"><%= data.contact %></a>
         </li>
 
-        <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <% 
-                  let currentLangText = '';
-                  let currentLangFlagName = '';
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <% 
+              let currentLangText = '';
+              let currentLangFlagName = '';
 
-                  switch (lang) {
-                    case 'en':
-                      currentLangText = 'EN';
-                      currentLangFlagName = 'en-lang-flag.png';
-                      break;
-                    case 'id':
-                      currentLangText = 'ID';
-                      currentLangFlagName = 'id-lang-flag.png';
-                      break;
-                  
-                    default:
-                      currentLangText = 'EN';
-                      break;
-                  }
-                %>
+              switch (lang) {
+                case 'en':
+                  currentLangText = 'EN';
+                  currentLangFlagName = 'en-lang-flag.png';
+                  break;
+                case 'id':
+                  currentLangText = 'ID';
+                  currentLangFlagName = 'id-lang-flag.png';
+                  break;
+              
+                default:
+                  currentLangText = 'EN';
+                  break;
+              }
+            %>
 
-                <span class="navbar__lang-item navbar__lang-flag">
-                  <img src="/img/<%= currentLangFlagName %>" alt="<%= `${currentLangText} Flag` %>" class="navbar__lang-image" />
+            <span class="navbar__lang-item navbar__lang-flag">
+              <img src="/img/<%= currentLangFlagName %>" alt="<%= `${currentLangText} Flag` %>" class="navbar__lang-image" />
+            </span>
+            <span class="navbar__lang-item navbar__lang-text"><%= currentLangText %></span>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+            <li>
+              <a class="dropdown-item" href="/en/<%= currentPage %>">
+                <span class="dropdown-item__flag">
+                  <img src="/img/en-lang-flag.png" alt="EN Flag" class="dropdown-item__image" />
                 </span>
-                <span class="navbar__lang-item navbar__lang-text"><%= currentLangText %></span>
+                English
               </a>
-              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                <li>
-                  <a class="dropdown-item" href="/en/<%= currentPage %>">
-                    <span class="dropdown-item__flag">
-                      <img src="/img/en-lang-flag.png" alt="EN Flag" class="dropdown-item__image" />
-                    </span>
-                    English
-                  </a>
-                </li>
+            </li>
 
-                <li>
-                  <a class="dropdown-item" href="/id/<%= currentPage %>">
-                    <span class="dropdown-item__flag">
-                      <img src="/img/id-lang-flag.png" alt="ID Flag" class="dropdown-item__image" />
-                    </span>
-                    Indonesia
-                  </a>
-                </li>
-              </ul>
+            <li>
+              <a class="dropdown-item" href="/id/<%= currentPage %>">
+                <span class="dropdown-item__flag">
+                  <img src="/img/id-lang-flag.png" alt="ID Flag" class="dropdown-item__image" />
+                </span>
+                Indonesia
+              </a>
             </li>
           </ul>
-        </div>
+        </li>
       </ul>
     </div>
   </div>
