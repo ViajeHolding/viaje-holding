@@ -4,13 +4,7 @@ body {
   color: var(--body);
 }
 
-/* h1,h2,h3,h4,h5,h6,
-.display-4 {
-  margin-top: 12px;
-  margin-bottom: 15px;
-  color: var(--dark);
-  font-weight: 700;
-} */
+
 /*======== COMPANY PROFILE====== */
 .hero{
    background-image: url(../img/BANNER\ COMPANY\ PROFILE.png);
@@ -42,45 +36,47 @@ a.btn{
   background-color: #3ee63ec5;
 }
 
-section{
-    padding-top: 80px;
-    padding-bottom: 80px;
+
+/* ====COMPANY PROFILE========= */
+.introduction .row {
+  justify-content: space-between;
+  align-items: center;
 }
 
+.introduction__info-title {
+  margin-bottom: 4rem;
+  color: var(--green);
+}
 
+.introduction__art {
+  text-align: center;
+}
 
-
-/* img */
-.col-img{
-    background-image: url(../img/COMPANY\ PROFILE\ ICON.png);
-    background-position: center;
-    background-size: cover;
-    min-height: 500px;
-    min-width: 400px;
+.introduction__art-img {
+  width: 80%;
+  height: auto;
+}
+.introduction__info-excerpt{
+  color: black;
 }
 
 /* img viaje project */
 
-img{
-  width: 400px;
-  margin-top: 15px;
-}
-img{
-  width: 400px;
-}
 h4.text2{
-  color: #3ee63e;
+  color: var(--green);
   margin-bottom: 20px;
   font-size: 1.9rem;
 }
 section.project{
   margin: 20px;
 }
+
 /* =====Business model====== */
+
 img.icon3{
-  margin-top: -80px;
-  width: 450px;
-  height: 0 auto;
+  width: 100%;
+  height: auto;
+  margin-top: -30px;
 }
 section.business-model{
   padding-top: 120px;
@@ -88,27 +84,26 @@ section.business-model{
 }
 
 h4.text3{
-  color: #50dd50;
-  margin-bottom: 20px;
+  color: var(--green);
+  margin-bottom: -50px;
   font-size: 1.9rem;
+}
+p.business-text {
+  font-size: 0.9rem;
+  color: #000000e5;
+  margin-top: -80px;
 }
 
 /* =====Viaje Group Companies==== */
+
 h4.text4{
-  color: #50dd50;
-  
-  margin-bottom: 20px;
+  color: var(--green);
   font-size: 1.9rem;
 }
 
 img.group{
   width: 450px;
   height: 0 auto;
-}
-/* ======= FOOTER ====== */
-
-img.viaje-black{
-  width: 200px;
 }
 
 /* text */
