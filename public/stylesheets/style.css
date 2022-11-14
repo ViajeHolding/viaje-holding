@@ -52,11 +52,13 @@ body {
 .primary-btn:hover {
   background-color: var(--green-dark-1);
   border-color: var(--green-dark-1);
+  color: white;
 }
 
 .primary-btn:active {
   background-color: var(--green-dark-2);
   border-color: var(--green-dark-2);
+  color: white;
 }
 
 /* =============== Page footer =============== */
