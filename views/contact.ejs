@@ -1,19 +1,19 @@
-<% const { navbar, contact: {
+<% const { navbar, footer, contact: {
   banner
 } } = data; %>
 
 <%- include('partials/header.ejs') %> <%- include('partials/navbar.ejs', { lang, data: navbar }) %>
 
 <body class="contact">
-  <section class="banner page-section">
+  <section class="banner page-banner page-section">
     <div class="container">
       <div class="row">
         <div class="col-12 col-md-8 col-lg-6">
-          <h1 class="banner__title"><%- banner.title %></h1>
+          <h1 class="banner__title page-banner__title"><%- banner.title %></h1>
       
-          <p class="banner__excerpt"><%- banner.excerpt %></p>
+          <p class="banner__excerpt page-banner__excerpt"><%- banner.excerpt %></p>
       
-          <button type="button" class="banner__action-btn btn btn-primary"><%- banner.button %></button>
+          <button type="button" class="banner__action-btn page-banner__action-btn primary-btn btn btn-primary"><%- banner.button %></button>
         </div>
       </div>
     </div>
@@ -28,6 +28,14 @@
         </div>
       </div>
     </div>
+    <div class="row">
+      <div class="col">
+        <div class="contact-info__item">
+          <h2 class="contact-info__item-title">Partnership Email</h2>
+          <p class="contact-info__item-contact">viaje@viajekorea.co.kr</p>
+        </div>
+      </div>
+    </div>
   </section>
 
-<%- include('partials/footer.ejs', { lang }) %>
+<%- include('partials/footer.ejs', { lang, data: footer }) %>

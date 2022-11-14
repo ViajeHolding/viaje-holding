@@ -1,4 +1,4 @@
-<% const { navbar, service: {
+<% const { navbar, footer, service: {
   banner,
   introduction,
   bikeShowcase,
@@ -9,15 +9,15 @@
 <%- include('partials/header.ejs') %> <%- include('partials/navbar.ejs', { lang, data: navbar }) %>
 
 <body class="services">
-  <section class="banner page-section">
+  <section class="banner page-banner page-section">
     <div class="container">
       <div class="row">
         <div class="col-12 col-md-8 col-lg-6">
-          <h1 class="banner__title"><%= banner.title %></h1>
+          <h1 class="banner__title page-banner__title"><%= banner.title %></h1>
       
-          <p class="banner__excerpt"><%- banner.excerpt %></p>
+          <p class="banner__excerpt page-banner__excerpt"><%- banner.excerpt %></p>
       
-          <button type="button" class="banner__action-btn btn btn-primary"><%= banner.button %></button>
+          <button type="button" class="banner__action-btn page-banner__action-btn primary-btn btn"><%= banner.button %></button>
         </div>
       </div>
     </div>
@@ -41,7 +41,7 @@
     </div>
   </section>
 
-  <section class="bike-showcase page-section container">
+  <section class="bike-showcase container page-section">
     <div class="row">
       <div class="col">
         <div class="bike-showcase__header">
@@ -60,11 +60,21 @@
     </div>
 
     <div class="row bike-showcase__features">
-      <img src="/img/service-icon-bike-features.png" alt="Viaje Bike Features" class="bike-showcase__features-icons" />
+      <% const serviceIconName = lang === 'en' ? 'service-icon-bike-features-en.png' : 'service-icon-bike-features-id.png' %>
+
+      <img src="/img/<%= serviceIconName %>" alt="Viaje Bike Features" class="bike-showcase__features-icons" />
     </div>
   </section>
 
   <section class="easy-payment page-section">
+    <div class="container-fluid p-0">
+      <div class="row">
+        <div class="col">
+          <img src="/img/viapoint-service.png" alt="Easy Payment" class="easy-payment__img">
+        </div>
+      </div>
+    </div>
+
     <div class="container">
       <div class="row">
         <div class="col-12 col-md-5"></div>
@@ -81,6 +91,14 @@
   </section>
 
   <section class="metaverse page-section">
+    <div class="container-fluid p-0">
+      <div class="row">
+        <div class="col">
+          <img src="/img/service-icon-metaverse.png" alt="Metaverse" class="metaverse__img">
+        </div>
+      </div>
+    </div> 
+
     <div class="container">
       <div class="row">
         <div class="col-12 col-md-7">
@@ -96,4 +114,4 @@
     </div>
   </section>
 
-<%- include('partials/footer.ejs', { lang }) %>
+<%- include('partials/footer.ejs', { lang, data: footer }) %>

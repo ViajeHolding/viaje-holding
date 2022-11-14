@@ -1,23 +1,25 @@
+<% const { profile, navigation } = data; %>
+
     <footer class="page-footer">
       <div class="container">
         <div class="row">
           <div class="page-footer__section page-footer__info col-12 col-sm-6 col-md-6">
             <img src="/img/viaje-holdings-white.png" alt="VIAJE Logo White" class="page-footer__logo" />
 
-            <p class="page-footer__excerpt">Eco-Friendly companies, various technology companies, and customers who use the services into the Ecosystem to compose the VIAJE&apos;s Ecosystem.</p>
+            <p class="page-footer__excerpt"><%- profile %></p>
           </div>
           <div class="page-footer__section page-footer__navigation col-12 col-sm-6 col-md-3">
-            <h3 class="page-footer__title">Useful Links</h3>
+            <h3 class="page-footer__title"><%- navigation.title %></h3>
 
             <ul class="page-footer__navigation-list">
               <li class="page-footer__navigation-item">
-                <a href="/<%= lang %>/contact" class="page-footer__navigation-link">Contact</a>
+                <a href="/<%= lang %>/contact" class="page-footer__navigation-link"><%- navigation.contactUs %></a>
               </li>
               <li class="page-footer__navigation-item">
-                <a href="/<%= lang %>/profile" class="page-footer__navigation-link">About</a>
+                <a href="/<%= lang %>/profile" class="page-footer__navigation-link"><%- navigation.profile %></a>
               </li>
             <li class="page-footer__navigation-item">
-                <a href="/<%= lang %>/service" class="page-footer__navigation-link">Service</a>
+                <a href="/<%= lang %>/service" class="page-footer__navigation-link"><%- navigation.service %></a>
               </li>
             </ul>
           </div>

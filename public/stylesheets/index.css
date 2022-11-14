@@ -24,7 +24,8 @@
   left: 0;
   z-index: 10;
   width: 50%;
-  padding-top: 8rem;
+  padding-top: 10rem;
+  padding-left: 3rem;
   color: white;
 }
 
@@ -61,5 +62,11 @@
 @media screen and (max-width: 768px) {
   .home .banner__info {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .home .banner__info {
+    padding-left: 1rem;
   }
 }

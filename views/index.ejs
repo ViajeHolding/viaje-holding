@@ -1,4 +1,4 @@
-<% const { navbar, home: {
+<% const { navbar, footer, home: {
   title,
   excerpt,
 } } = data; %>
@@ -18,14 +18,23 @@
         <div class="carousel-item">
           <img src="/img/home-banner-03.png" class="banner__carousel-image d-block w-100" alt="Home Banner 03">
         </div>
+        <div class="carousel-item">
+          <img src="/img/banner-service.png" class="banner__carousel-image d-block w-100" alt="Home Banner 04">
+        </div>
+        <div class="carousel-item">
+          <img src="/img/banner-partnership.png" class="banner__carousel-image d-block w-100" alt="Home Banner 05">
+        </div>
+        <div class="carousel-item">
+          <img src="/img/banner-contact.png" class="banner__carousel-image d-block w-100" alt="Home Banner 06">
+        </div>
       </div>
     </div>
 
-    <div class="banner__info container-fluid">
+    <div class="banner__info container">
       <h1 class="banner__info-headline"><%- title %></h1>
 
       <p class="banner__info-excerpt"><%- excerpt %></p>
     </div>
   </section>
 
-<%- include('partials/footer.ejs', { lang }) %>
+<%- include('partials/footer.ejs', { lang, data: footer }) %>

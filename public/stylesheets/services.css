@@ -1,29 +1,8 @@
 /* =============== Banner Section =============== */
 
 .services .banner {
-  height: 600px;
-  padding-top: 8rem;
   background-color: var(--green);
   background: url('/img/banner-service.png') center/cover no-repeat;
-  color: white;
-}
-
-.services h1.banner__title {
-  margin-bottom: 1rem;
-  text-transform: uppercase;
-  letter-spacing: 0.4rem;
-  font-weight: bold;
-  font-size: 4rem;
-  color: white;
-}
-
-.services .banner__excerpt {
-  margin-bottom: 2rem;
-}
-
-.services .banner__action-btn {
-  background-color: var(--green);
-  border-color: var(--green);
 }
 
 /* =============== Introduction Section =============== */
@@ -88,6 +67,10 @@
   background-position: -300px 45%;
 }
 
+.services .easy-payment__img {
+  display: none;
+}
+
 .services .easy-payment__info {
   text-align: right;
 }
@@ -95,8 +78,6 @@
 .services .easy-payment__info-title {
   margin-bottom: 1.5rem;
   color: var(--green);
-  text-transform: uppercase;
-  font-weight: bold;
 }
 
 /* =============== Metaverse Section =============== */
@@ -110,11 +91,13 @@
   background-size: 47%;
 }
 
+.services .metaverse__img {
+  display: none;
+}
+
 .services .metaverse__info-title {
   margin-bottom: 1.5rem;
   color: var(--green);
-  text-transform: uppercase;
-  font-weight: bold;
 }
 
 /* =============== Breakpoints =============== */
@@ -123,19 +106,23 @@
   .services .easy-payment {
     background-position: -400px 45%;
   }
+
+  .services .metaverse {
+    background-size: 55%;
+  }
 }
 
 @media screen and (max-width: 992px) {
-  .services h1.banner__title {
-    font-size: 3rem;
-  }
-
   .services .introduction__art-img {
     width: 80%;
   }
 
   .services .easy-payment {
     background-position: -450px 45%;
+  }
+
+  .services .metaverse {
+    background-size: 60%;
   }
 }
 
@@ -170,6 +157,13 @@
     padding: 0;
   }
 
+  .services .easy-payment__img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+
   .services .easy-payment__info {
     text-align: left;
   }
@@ -179,11 +173,38 @@
     margin-bottom: 5rem;
     padding: 0;
   }
+
+  .services .metaverse__img {
+    display: block;
+    width: 80%;
+    height: auto;
+    margin: 0 auto 1rem;
+  }
 }
 
 @media screen and (max-width: 576px) {
-  .services h1.banner__title {
-    font-size: 2rem;
-    letter-spacing: 0.3rem;
+  .services .easy-payment .container-fluid {
+    height: 300px;
+    margin-bottom: 1rem;
+  }
+
+  .services .easy-payment .container-fluid .row,
+  .services .easy-payment .container-fluid .col,
+  .services .metaverse .container-fluid .row,
+  .services .metaverse .container-fluid .col {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .services .easy-payment__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .services .metaverse__img {
+    width: 100%;
   }
 }
