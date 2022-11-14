@@ -20,7 +20,7 @@
 }
 
 img.logo {
-  width: 180px;
+  width: 150px;
   height: auto;
 }
 
@@ -55,4 +55,12 @@ img.logo {
 .dropdown-item__image {
   width: 30px;
   height: auto;
+}
+
+/* =============== Breakpoints =============== */
+
+@media screen and (max-width: 768px) {
+  img.logo {
+    width: 100px;
+  }
 }

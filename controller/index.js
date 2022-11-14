@@ -1,7 +1,8 @@
 const en = require('../data/languages/en.js');
 const id = require('../data/languages/id.js');
+const kr = require('../data/languages/kr.js');
 
-const dict = { en, id };
+const dict = { en, id, kr };
 
 module.exports = {
   index(req, res) {

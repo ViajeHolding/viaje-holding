@@ -35,13 +35,20 @@
                   currentLangText = 'EN';
                   currentLangFlagName = 'en-lang-flag.png';
                   break;
+
                 case 'id':
                   currentLangText = 'ID';
                   currentLangFlagName = 'id-lang-flag.png';
                   break;
+
+                case 'kr':
+                  currentLangText = 'KR';
+                  currentLangFlagName = 'kr-lang-flag.png';
+                  break;
               
                 default:
                   currentLangText = 'EN';
+                  currentLangFlagName = 'en-lang-flag.png';
                   break;
               }
             %>
@@ -55,7 +62,7 @@
             <li>
               <a class="dropdown-item" href="/en/<%= currentPage %>">
                 <span class="dropdown-item__flag">
-                  <img src="/img/en-lang-flag.png" alt="EN Flag" class="dropdown-item__image" />
+                  <img src="/img/en-lang-flag.png" alt="England Flag" class="dropdown-item__image" />
                 </span>
                 English
               </a>
@@ -64,9 +71,18 @@
             <li>
               <a class="dropdown-item" href="/id/<%= currentPage %>">
                 <span class="dropdown-item__flag">
-                  <img src="/img/id-lang-flag.png" alt="ID Flag" class="dropdown-item__image" />
+                  <img src="/img/id-lang-flag.png" alt="Indonesia Flag" class="dropdown-item__image" />
                 </span>
                 Indonesia
+              </a>
+            </li>
+
+            <li>
+              <a class="dropdown-item" href="/kr/<%= currentPage %>">
+                <span class="dropdown-item__flag">
+                  <img src="/img/kr-lang-flag.png" alt="South Korea Flag" class="dropdown-item__image" />
+                </span>
+                Korean
               </a>
             </li>
           </ul>
