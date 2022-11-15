@@ -27,7 +27,7 @@ module.exports = {
       excerpt:
         'Carbon-Free VIAJE adalah perusahaan strategi LST Ramah Lingkungan, yang berpartisipasi dalam kebijakan Carbon-Netral melalui teknologi IT yang menyatu dengan industri ke-4 ("SMART" secara system yang pintar) sehingga konsumsi nilai pelanggan dapat berkontribusi untuk perlindungan lingkungan.',
       quote:
-        '“Semua penghasilan dari VIA POIN yang digunakan oleh pengguna dan mitra dinyatakan sebagai Nilai Pengurangan Karbon dan digunakan untuk melindungi lingkungan.',
+        'Semua penghasilan dari VIA POIN yang digunakan oleh pengguna dan mitra dinyatakan sebagai Nilai Pengurangan Karbon dan digunakan untuk melindungi lingkungan.',
       button: 'Pelajari Lebih',
     },
     companyProfile: {

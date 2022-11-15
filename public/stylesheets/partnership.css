@@ -2,7 +2,7 @@
 
 .partnership .banner {
   background-color: var(--green);
-  background: url('/img/banner-partnership.png') center/cover no-repeat;
+  background: fixed url('/img/banner-partnership.png') center/cover no-repeat;
 }
 
 /* =============== Partners Logo =============== */

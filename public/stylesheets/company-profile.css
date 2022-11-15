@@ -35,25 +35,26 @@ a.btn {
 
 
 /* ====COMPANY PROFILE========= */
-.introduction .row {
+.company-profile .introduction .row {
   justify-content: space-between;
   align-items: center;
 }
 
-.introduction__info-title {
+.company-profile .introduction__info-title {
   margin-bottom: 4rem;
   color: var(--green);
 }
 
-.introduction__art {
+.company-profile .introduction__art {
   text-align: center;
 }
 
-.introduction__art-img {
+.company-profile .introduction__art-img {
   width: 80%;
   height: auto;
 }
-.introduction__info-excerpt{
+
+.company-profile .introduction__info-excerpt {
   color: black;
 }
 /* img */
@@ -67,7 +68,7 @@ a.btn {
 
 /*======== img viaje project ========*/
 
-h4.text2{
+h4.text2 {
   color: var(--green);
   margin-bottom: 50px;
   font-size: 1.9rem;
@@ -89,7 +90,7 @@ p.small-1 {
 
 /* =====Business model====== */
 
-img.icon3{
+img.icon3 {
   width: 100%;
   height: auto;
   margin-top: -30px;
@@ -99,7 +100,7 @@ img.icon3{
   padding-bottom: 120px;
 } */
 
-h4.text3{
+h4.text3 {
   color: var(--green);
   margin-bottom: -50px;
   font-size: 1.9rem;
@@ -112,7 +113,7 @@ p.business-text{
 
 /* =====Viaje Group Companies==== */
 
-h4.text4{
+h4.text4 {
   color: var(--green);
   font-size: 1.9rem;
   text-transform: uppercase;

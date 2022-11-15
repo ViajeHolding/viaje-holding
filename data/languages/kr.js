@@ -19,7 +19,7 @@ module.exports = {
   home: {
     title: 'Reduce Your Carbon',
     excerpt:
-      'Carbon-Free VIAJE는 여행 및 문화 콘텐프를 제공며, 온라인 . 오프라인을 아우르는 온라인 스트리밍 서비스를 개발하여 4차 산업과 융합한 메타버스 서비스를 제공하는 친화적인 기업입니다.',
+      'Carbon-Free VIAJE는 여행 및 문화 콘텐츠를 제공하며, 온라인 . 오프라인을 아우르는 온라인 스트리밍 서비스를 개발하여 4차 산업과 융합한 메타버스 서비스를 제공하는 친화적인 기업입니다.',
   },
   profile: {
     banner: {

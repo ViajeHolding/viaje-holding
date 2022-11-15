@@ -2,7 +2,7 @@
 
 .contact .banner {
   background-color: var(--green);
-  background: url('/img/banner-contact.png') center/cover no-repeat;
+  background: fixed url('/img/banner-contact.png') center/cover no-repeat;
 }
 
 /* =============== Contact Info Section =============== */

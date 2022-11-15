@@ -2,7 +2,7 @@
 
 .services .banner {
   background-color: var(--green);
-  background: url('/img/banner-service.png') center/cover no-repeat;
+  background: fixed url('/img/banner-service.png') center/cover no-repeat;
 }
 
 /* =============== Introduction Section =============== */
