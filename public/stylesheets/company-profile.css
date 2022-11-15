@@ -1,5 +1,6 @@
 /*======== COMPANY PROFILE====== */
 
+/* HERO PAGE */
 .hero {
   background-image: url(../img/BANNER\ COMPANY\ PROFILE.png);
   background-position: center;
@@ -30,6 +31,8 @@ a.btn {
   background-color: #3ee63ec5;
 }
 
+/*======== HERO PAGE========= */
+
 
 /* ====COMPANY PROFILE========= */
 .introduction .row {
@@ -52,7 +55,7 @@ a.btn {
 }
 .introduction__info-excerpt{
   color: black;
-
+}
 /* img */
 .col-img {
   background-image: url(../img/COMPANY\ PROFILE\ ICON.png);
@@ -62,17 +65,27 @@ a.btn {
   min-width: 400px;
 }
 
-/* img viaje project */
+/*======== img viaje project ========*/
 
 h4.text2{
   color: var(--green);
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   font-size: 1.9rem;
   text-transform: uppercase;
 }
 section.project {
   margin: 20px;
 }
+
+p.small-1 {
+  font-size: 0.9rem;
+  color: #000000e5;
+}
+.viaje-picture{
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
 
 /* =====Business model====== */
 
@@ -81,15 +94,20 @@ img.icon3{
   height: auto;
   margin-top: -30px;
 }
-section.business-model {
+/* section.business-model {
   padding-top: 120px;
   padding-bottom: 120px;
-}
+} */
 
 h4.text3{
   color: var(--green);
   margin-bottom: -50px;
   font-size: 1.9rem;
+}
+p.business-text{
+  margin-top: -150px;
+  text-align: center;
+  color: black;
 }
 
 /* =====Viaje Group Companies==== */
@@ -98,15 +116,31 @@ h4.text4{
   color: var(--green);
   font-size: 1.9rem;
   text-transform: uppercase;
+  margin-bottom: 100px;
+  
 }
 
 img.group {
   width: 450px;
   height: 0 auto;
+  padding-top: -150px;
 }
 
 /* text */
 p.small {
   font-size: 0.9rem;
   color: #000000e5;
+}
+
+/* Jarak Per Section*/
+
+.page1{
+  margin-bottom: 200px;
+}
+.page2{
+  padding-bottom: 100px;
+}
+.page3{
+  padding-top: 100px;
+  padding-bottom: 100px;
 }

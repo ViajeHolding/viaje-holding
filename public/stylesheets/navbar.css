@@ -59,9 +59,9 @@ img.logo {
   height: auto;
 }
 
-@media (max-width:991px) {
+@media (max-width:768px) {
     .ul-bg{
-        background-color: #00ff4cfb;
+        background-color: #ffffff;
         height: auto;
         border-radius: 10px;
     }
@@ -72,6 +72,7 @@ img.logo {
     }
     .nav-link{
         color:#040504;
+        text-shadow: 10px #040504;
         font-size: 1.0rem;
         position: relative;
     }
