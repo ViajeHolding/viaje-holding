@@ -43,8 +43,76 @@
   text-justify: inter-word;
 }
 
+/* =============== Introduciton =============== */
+
+.home .introduction {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  text-align: center;
+}
+
+.home .introduction .row {
+  justify-content: center;
+}
+
+.home .introduction__title {
+  margin-bottom: 1.5rem;
+  color: var(--green);
+}
+
+/* =============== Pages Summary =============== */
+
+.home .pages-summary {
+  margin: 0;
+  padding: 0;
+}
+
+.home .pages-summary .row {
+  width: 100%;
+  margin: 0;
+}
+
+.home .pages-summary .col {
+  padding: 0;
+}
+
+.home .pages-summary__card {
+  padding: 4rem 0 6rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+}
+
+.home .pages-summary__card--profile {
+  background: fixed url('/img/BANNER COMPANY PROFILE.png') center/cover
+    no-repeat;
+}
+
+.home .pages-summary__card--service {
+  background: fixed url('/img/banner-service.png') center/cover no-repeat;
+}
+
+.home .pages-summary__card--partnership {
+  background: fixed url('/img/banner-partnership.png') center/cover no-repeat;
+}
+
+.home .pages-summary__card--contact {
+  background: fixed url('/img/banner-contact.png') center/cover no-repeat;
+}
+
+.home .pages-summary__card-title {
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  font-weight: bold;
+}
+
+.home a.pages-summary__card-btn {
+  margin-top: 0;
+  background-color: var(--green);
+  color: white;
+}
+
 .home .page-footer {
-  display: none;
+  margin-top: 0;
 }
 
 /* =============== Breakpoints =============== */

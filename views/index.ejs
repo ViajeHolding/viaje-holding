@@ -1,41 +1,115 @@
 <% const { navbar, footer, home: {
   title,
   excerpt,
-} } = data; %>
+}, profile, service, partnership, contact } = data; %>
 
 <%- include('partials/header.ejs') %> <%- include('partials/navbar.ejs', { lang, data: navbar }) %>
 
 <body class="home">
-  <section class="banner">
-    <div class="banner__carousel carousel slide carousel-fade" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="/img/home-banner-01.png" class="banner__carousel-image d-block w-100" alt="Home Banner 01">
-        </div>
-        <div class="carousel-item">
-          <img src="/img/home-banner-02.png" class="banner__carousel-image d-block w-100" alt="Home Banner 02">
-        </div>
-        <div class="carousel-item">
-          <img src="/img/home-banner-03.png" class="banner__carousel-image d-block w-100" alt="Home Banner 03">
-        </div>
-        <div class="carousel-item">
-          <img src="/img/banner-service.png" class="banner__carousel-image d-block w-100" alt="Home Banner 04">
-        </div>
-        <div class="carousel-item">
-          <img src="/img/banner-partnership.png" class="banner__carousel-image d-block w-100" alt="Home Banner 05">
-        </div>
-        <div class="carousel-item">
-          <img src="/img/banner-contact.png" class="banner__carousel-image d-block w-100" alt="Home Banner 06">
+  <main class="main-container">
+    <section class="banner">
+      <div class="banner__carousel carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/img/home-banner-01.png" class="banner__carousel-image d-block w-100" alt="Home Banner 01">
+          </div>
+          <div class="carousel-item">
+            <img src="/img/home-banner-02.png" class="banner__carousel-image d-block w-100" alt="Home Banner 02">
+          </div>
+          <div class="carousel-item">
+            <img src="/img/home-banner-03.png" class="banner__carousel-image d-block w-100" alt="Home Banner 03">
+          </div>
+          <div class="carousel-item">
+            <img src="/img/banner-service.png" class="banner__carousel-image d-block w-100" alt="Home Banner 04">
+          </div>
+          <div class="carousel-item">
+            <img src="/img/banner-partnership.png" class="banner__carousel-image d-block w-100" alt="Home Banner 05">
+          </div>
+          <div class="carousel-item">
+            <img src="/img/banner-contact.png" class="banner__carousel-image d-block w-100" alt="Home Banner 06">
+          </div>
         </div>
       </div>
-    </div>
+  
+      <div class="banner__info container">
+        <h1 class="banner__info-headline"><%- title %></h1>
+  
+        <p class="banner__info-excerpt"><%- excerpt %></p>
+      </div>
+    </section>
+  
+    <section class="introduction container">
+      <div class="row">
+        <div class="col-12 col-md-8">
+          <h2 class="introduction__title"><%- title %></h2>
+    
+          <p class="introduction__excerpt"><%- excerpt %></p>
+        </div>
+      </div>
+    </section>
 
-    <div class="banner__info container">
-      <h1 class="banner__info-headline"><%- title %></h1>
+    <section class="pages-summary container-fluid">
+      <div class="row">
+        <div class="col">
+          <section class="pages-summary__card pages-summary__card--profile">
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  <h1 class="pages-summary__card-title"><%= profile.banner.title[1] %></h1>
+              
+                  <p class="pages-summary__card-excerpt"><%- profile.banner.excerpt %></p>
+              
+                  <a href="/<%- lang %>/profile" class="pages-summary__card-btn primary-btn btn"><%= profile.banner.button %></a>
+                </div>
+              </div>
+            </div>
+          </section>
 
-      <p class="banner__info-excerpt"><%- excerpt %></p>
-    </div>
-  </section>
+          <section class="pages-summary__card pages-summary__card--service">
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  <h1 class="pages-summary__card-title"><%= service.banner.title %></h1>
+              
+                  <p class="pages-summary__card-excerpt"><%- service.banner.excerpt %></p>
+              
+                  <a href="/<%- lang %>/service" class="pages-summary__card-btn primary-btn btn"><%= service.banner.button %></a>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="pages-summary__card pages-summary__card--partnership">
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  <h1 class="pages-summary__card-title"><%= partnership.banner.title %></h1>
+              
+                  <p class="pages-summary__card-excerpt"><%- partnership.banner.excerpt %></p>
+              
+                  <a href="/<%- lang %>/partnership" class="pages-summary__card-btn primary-btn btn"><%= partnership.banner.button %></a>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="pages-summary__card pages-summary__card--contact">
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  <h1 class="pages-summary__card-title"><%= contact.banner.title %></h1>
+              
+                  <p class="pages-summary__card-excerpt"><%- contact.banner.excerpt %></p>
+              
+                  <a href="/<%- lang %>/contact" class="pages-summary__card-btn primary-btn btn"><%= contact.banner.button %></a>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+  </main>
 
 <%- include('partials/footer.ejs', { lang, data: footer }) %>
 <%- include('partials/libraries.ejs') %>
