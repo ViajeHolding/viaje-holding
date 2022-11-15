@@ -60,8 +60,27 @@
     </div>
 
     <div class="row bike-showcase__features">
-      <% const serviceIconName = lang === 'en' ? 'service-icon-bike-features-en.png' : 'service-icon-bike-features-id.png' %>
+      <% 
+        let serviceIconName = '';
 
+        switch (lang) {
+          case 'en':
+            serviceIconName = 'service-icon-bike-features-en.png';
+            break;
+
+          case 'id':
+            serviceIconName = 'service-icon-bike-features-id.png';
+            break;
+
+          case 'kr':
+            serviceIconName = 'service-icon-bike-features-kr.png';
+            break;
+        
+          default:
+            serviceIconName = 'service-icon-bike-features-en.png';
+            break;
+        }
+      %>
       <img src="/img/<%= serviceIconName %>" alt="Viaje Bike Features" class="bike-showcase__features-icons" />
     </div>
   </section>

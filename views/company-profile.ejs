@@ -4,7 +4,31 @@
   viajeProject,
   businessModel,
   viajeGroupCompanies,
-} } = data; %>
+} } = data; 
+
+let iconCompanyProfile = '';
+let viajeFoundation = '';
+
+switch (lang) {
+  case 'en':
+    iconCompanyProfile = 'icon-company-profile-en.png';
+    viajeFoundation = 'viaje-foundation-logo-en.png';
+    break;
+
+  case 'id':
+    iconCompanyProfile = 'icon-company-profile-en.png';
+    viajeFoundation = 'viaje-foundation-logo-en.png';
+    break;
+
+  case 'kr':
+    iconCompanyProfile = 'icon-company-profile-kr.png';
+    viajeFoundation = 'viaje-foundation-logo-kr.png';
+    break;
+
+  default:
+    break;
+}
+%>
 
 <%- include('partials/header.ejs') %> <%- include('partials/navbar.ejs', { lang, data: navbar }) %>
 
@@ -68,7 +92,7 @@
             <img class="img-fluid" src="/img/viaje phone company profile.png"/>
           </div>
           <div class="col-md-4">
-            <img class="img-fluid " src="/img/icon-company-profile-en.png"/>
+            <img class="img-fluid " src="/img/<%= iconCompanyProfile %>"/>
           </div>
         </div>
         
@@ -113,7 +137,7 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-7">
-            <img class="icon3" src="/img/viaje-foundation-logo-en (1).png" />
+            <img class="icon3" src="/img/<%= viajeFoundation %>" />
           </div>
          </div>
 
