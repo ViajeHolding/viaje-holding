@@ -1,13 +1,16 @@
 /*======== COMPANY PROFILE====== */
 
 /* HERO PAGE */
-.company-profile .hero {
-  background-image: url(../img/BANNER\ COMPANY\ PROFILE.png);
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  position: relative;
-}
+  .company-profile .hero {
+    background-image: url(../img/BANNER\ COMPANY\ PROFILE.png) ;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-repeat: no-repeat;
+  }
 
 .company-profile .hero__title {
   font-weight: bold;
@@ -87,7 +90,7 @@ section.project {
 }
 
 p.small-1 {
-  /* font-size: 0.9rem; */
+  font-size: 1.1rem;
   color: var(--body);
 }
 .viaje-picture {
@@ -143,7 +146,7 @@ img.group {
 
 /* text */
 p.small {
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   /* color: #000000e5; */
   color: var(--body);
 }
@@ -163,4 +166,17 @@ p.small {
 .page3 {
   padding-top: 100px;
   padding-bottom: 100px;
+}
+
+@media (max-width:768px) {
+  .hero {
+    background-image: url(../img/BANNER\ COMPANY\ PROFILE.png) ;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    /* width: 100vw;
+    height: 100vh; */
+    position: relative;
+    background-repeat: no-repeat;
+  }
 }
