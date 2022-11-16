@@ -61,12 +61,12 @@ module.exports = {
       body: 'Bisnis rental motor dan sepeda listrik akan dimulai pertama kali di Bali. Carbon-Free VIAJE tidak hanya berkontribusi untuk memberikan kenyamanan pariwisata bagi wisatawan tetapi juga dalam Pengurangan Karbon, yang mengurangi karbon dioksida dalam mesin pembakaran internal dan menyediakan berbagai layanan untuk perjalanan yang bernilai konsumsi dan Ramah Lingkungan. Jangan lewatkan kesempatan ini! Mari datang dan menikmati liburan Bersama kami.',
     },
     bikeShowcase: {
-      title: 'Varietas Motor dan Sepeda',
+      title: 'Variasi Motor dan Sepeda',
       subtitle: 'Pilih yang sesuai dengan selera Anda',
     },
     easyPayment: {
       title: 'Metode Pembayaran Mudah',
-      body: 'Metode pembayaran menggunakan VIA POIN akan mendapatkan tambahan diskon di took mitra kami. VIA POIN yang digunakan akan dikonversi mengukur nilai pengurangan karbon dan reward akan diberikan kepada pengguna dan mitra. Reward yang diberikan hanya bisa digunakan untuk layanan Eco-Friendly yang hanya tersedia di mitra kami.',
+      body: 'Metode pembayaran menggunakan VIA POIN akan mendapatkan tambahan diskon di toko mitra kami. VIA POIN yang digunakan akan dikonversi mengukur nilai pengurangan karbon dan reward akan diberikan kepada pengguna dan mitra. Reward yang diberikan hanya bisa digunakan untuk layanan Eco-Friendly yang hanya tersedia di mitra kami.',
     },
     metaverse: {
       title: 'Metaverse',

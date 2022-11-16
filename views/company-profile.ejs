@@ -4,19 +4,43 @@
   viajeProject,
   businessModel,
   viajeGroupCompanies,
-} } = data; %>
+} } = data; 
+
+let iconCompanyProfile = '';
+let viajeFoundation = '';
+
+switch (lang) {
+  case 'en':
+    iconCompanyProfile = 'icon-company-profile-en.png';
+    viajeFoundation = 'viaje-foundation-logo-en.png';
+    break;
+
+  case 'id':
+    iconCompanyProfile = 'icon-company-profile-en.png';
+    viajeFoundation = 'viaje-foundation-logo-en.png';
+    break;
+
+  case 'kr':
+    iconCompanyProfile = 'icon-company-profile-kr.png';
+    viajeFoundation = 'viaje-foundation-logo-kr.png';
+    break;
+
+  default:
+    break;
+}
+%>
 
 <%- include('partials/header.ejs') %> <%- include('partials/navbar.ejs', { lang, data: navbar }) %>
 
-<body class="company-profile">
+<body class="company-profile <%= lang %>">
   <!-- HERO -->
 
   <div class="hero vh-100 d-flex align-items-center page-section">
     <div class="container">
       <div class="row">
         <div class="col-lg-7">
-          <h1 class="display-4 text-white"><%- banner.title[0] %></h1>
-          <h2 class="display-4 text-white"><%- banner.title[1] %></h2>
+          <h1 class="display-4 text-white hero__title"><%- banner.title[0] %></h1>
+          <h2 class="display-4 text-white hero__title"><%- banner.title[1] %></h2>
           <p class="text-white my-3 small"><%- banner.excerpt %></p>
           <p class="text-white small">"<%- banner.quote %>"</p>
 
@@ -59,7 +83,7 @@
   <div class="container">
     <div class="row align-items-center">
       <div class="col-md-7 mx-auto text-center">
-        <h4 class="text2"><%- viajeProject.title %></h4>
+        <h4 class="text2 viaje-project__title"><%- viajeProject.title %></h4>
         <p class="small-1"><%- viajeProject.body %></p>
       </div>
       <div class="container">
@@ -68,7 +92,7 @@
             <img class="img-fluid" src="/img/viaje phone company profile.png"/>
           </div>
           <div class="col-md-4">
-            <img class="img-fluid " src="/img/icon-company-profile-en.png"/>
+            <img class="img-fluid " src="/img/<%= iconCompanyProfile %>"/>
           </div>
         </div>
         
@@ -85,7 +109,7 @@
     <div class="container">
       <div class="row align-items-center">
         <div class="col-md-4 mx-auto text-center">
-          <h4 class="text3 text-uppercase"><%- businessModel.title %></h4>
+          <h4 class="text3 text-uppercase business-model__title"><%- businessModel.title %></h4>
         </div>
         <div class="container">
           <div class="row justify-content-center">
@@ -108,15 +132,14 @@
   <div class="container">
     <div class="row">
       <div class=" mx-auto text-center col-md-8">
-        <h4 class="text4"><%- viajeGroupCompanies.title %></h4>
+        <h4 class="text4 viaje-group__title"><%- viajeGroupCompanies.title %></h4>
       </div>
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-7">
-            <img class="icon3" src="/img/viaje-foundation-logo-en (1).png" />
+            <img class="icon3" src="/img/<%= viajeFoundation %>" />
           </div>
          </div>
-
       </div>
     </div>
   </section>

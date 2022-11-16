@@ -1,21 +1,56 @@
 .home .banner {
   position: relative;
+  height: 100vh;
 }
 
 .home .banner .carousel-inner {
-  height: 100vh;
+  height: 100%;
 }
 
 .home .banner .carousel-item {
   height: 100%;
+  background-color: var(--green);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home .banner .carousel-item--01 {
+  background-image: url('/img/home-banner-01.png');
+  background-position: center;
+}
+
+.home .banner .carousel-item--02 {
+  background-image: url('/img/home-banner-02.png');
+  background-position: center;
+}
+
+.home .banner .carousel-item--03 {
+  background-image: url('/img/home-banner-03.png');
+  background-position: center;
+}
+
+.home .banner .carousel-item--04 {
+  background-image: url('/img/BANNER COMPANY PROFILE.png');
+  background-position: center;
+}
+
+.home .banner .carousel-item--05 {
+  background-image: url('/img/banner-service.png');
+  background-position: center;
+}
+
+.home .banner .carousel-item--06 {
+  background-image: url('/img/banner-partnership.png');
+  background-position: center;
+}
+
+.home .banner .carousel-item--07 {
+  background-image: url('/img/banner-contact.png');
+  background-position: center;
 }
 
 .home .banner__carousel {
-  min-height: 100vh;
-}
-.home .banner__carousel-image {
   height: 100%;
-  object-fit: cover;
 }
 
 .home .banner__info {
@@ -23,10 +58,20 @@
   top: 0;
   left: 0;
   z-index: 10;
-  width: 50%;
-  padding-top: 10rem;
-  padding-left: 3rem;
+  width: 100%;
+  height: 100%;
   color: white;
+}
+
+.home .banner__info .container {
+  height: 100%;
+}
+
+.home .banner__info .row {
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  height: 100%;
 }
 
 .home h1.banner__info-headline {
@@ -58,6 +103,7 @@
 .home .introduction__title {
   margin-bottom: 1.5rem;
   color: var(--green);
+  font-weight: 600;
 }
 
 /* =============== Pages Summary =============== */
@@ -118,8 +164,12 @@
 /* =============== Breakpoints =============== */
 
 @media screen and (max-width: 992px) {
-  .home .banner__info {
-    width: 60%;
+  .home .banner .carousel-item--06 {
+    background-position: 80% center;
+  }
+
+  .home .banner .carousel-item--07 {
+    background-position: 80% center;
   }
 
   .home h1.banner__info-headline {
@@ -128,13 +178,33 @@
 }
 
 @media screen and (max-width: 768px) {
+  .home .banner .carousel-item--01 {
+    background-position: 80% center;
+  }
+
+  .home .banner .carousel-item--02 {
+    background-position: 80% center;
+  }
+
+  .home .banner .carousel-item--03 {
+    background-position: 80% center;
+  }
+
+  .home .banner .carousel-item--05 {
+    background-position: 80% center;
+  }
+
   .home .banner__info {
     width: 100%;
   }
 }
 
 @media screen and (max-width: 576px) {
-  .home .banner__info {
-    padding-left: 1rem;
+  .home .banner .carousel-item--01 {
+    background-position: 70% center;
+  }
+
+  .home .banner .carousel-item--03 {
+    background-position: 75% center;
   }
 }

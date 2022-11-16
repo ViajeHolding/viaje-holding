@@ -8,7 +8,7 @@
 
 <%- include('partials/header.ejs') %> <%- include('partials/navbar.ejs', { lang, data: navbar }) %>
 
-<body class="services">
+<body class="services <%= lang %>">
   <section class="banner page-banner page-section">
     <div class="container">
       <div class="row">
@@ -60,8 +60,27 @@
     </div>
 
     <div class="row bike-showcase__features">
-      <% const serviceIconName = lang === 'en' ? 'service-icon-bike-features-en.png' : 'service-icon-bike-features-id.png' %>
+      <% 
+        let serviceIconName = '';
 
+        switch (lang) {
+          case 'en':
+            serviceIconName = 'service-icon-bike-features-en.png';
+            break;
+
+          case 'id':
+            serviceIconName = 'service-icon-bike-features-id.png';
+            break;
+
+          case 'kr':
+            serviceIconName = 'service-icon-bike-features-kr.png';
+            break;
+        
+          default:
+            serviceIconName = 'service-icon-bike-features-en.png';
+            break;
+        }
+      %>
       <img src="/img/<%= serviceIconName %>" alt="Viaje Bike Features" class="bike-showcase__features-icons" />
     </div>
   </section>
@@ -97,7 +116,7 @@
           <img src="/img/service-icon-metaverse.png" alt="Metaverse" class="metaverse__img">
         </div>
       </div>
-    </div> 
+    </div>
 
     <div class="container">
       <div class="row">

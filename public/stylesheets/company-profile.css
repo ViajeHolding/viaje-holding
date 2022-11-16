@@ -1,7 +1,7 @@
 /*======== COMPANY PROFILE====== */
 
 /* HERO PAGE */
-  .hero {
+  .company-profile .hero {
     background-image: url(../img/BANNER\ COMPANY\ PROFILE.png) ;
     background-position: center center;
     background-size: cover;
@@ -12,11 +12,18 @@
     background-repeat: no-repeat;
   }
 
+.company-profile .hero__title {
+  font-weight: bold;
+  letter-spacing: 0.4rem;
+  text-transform: uppercase;
+}
+
 h4.text1 {
   color: #3ee63e;
   margin-bottom: 25px;
   font-size: 1.9rem;
 }
+
 .hero::after {
   content: '';
   width: 100%;
@@ -36,7 +43,6 @@ a.btn {
 
 /*======== HERO PAGE========= */
 
-
 /* ====COMPANY PROFILE========= */
 .company-profile .introduction .row {
   justify-content: space-between;
@@ -46,6 +52,8 @@ a.btn {
 .company-profile .introduction__info-title {
   margin-bottom: 4rem;
   color: var(--green);
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 .company-profile .introduction__art {
@@ -58,7 +66,7 @@ a.btn {
 }
 
 .company-profile .introduction__info-excerpt {
-  color: black;
+  color: var(--body);
 }
 /* img */
 .col-img {
@@ -83,13 +91,16 @@ section.project {
 
 p.small-1 {
   font-size: 1.1rem;
-  color: #000000e5;
+  color: var(--body);
 }
-.viaje-picture{
+.viaje-picture {
   margin-top: 50px;
   margin-bottom: 40px;
 }
 
+.company-profile .viaje-project__title {
+  font-weight: 600;
+}
 
 /* =====Business model====== */
 
@@ -108,10 +119,14 @@ h4.text3 {
   margin-bottom: -50px;
   font-size: 1.9rem;
 }
-p.business-text{
+p.business-text {
   margin-top: -150px;
   text-align: center;
-  color: black;
+  color: var(--body);
+}
+
+.company-profile .business-model__title {
+  font-weight: 600;
 }
 
 /* =====Viaje Group Companies==== */
@@ -121,7 +136,6 @@ h4.text4 {
   font-size: 1.9rem;
   text-transform: uppercase;
   margin-bottom: 100px;
-  
 }
 
 img.group {
@@ -133,18 +147,23 @@ img.group {
 /* text */
 p.small {
   font-size: 1.1rem;
-  color: #000000e5;
+  /* color: #000000e5; */
+  color: var(--body);
+}
+
+.company-profile .viaje-group__title {
+  font-weight: 600;
 }
 
 /* Jarak Per Section*/
 
-.page1{
+.page1 {
   margin-bottom: 200px;
 }
-.page2{
+.page2 {
   padding-bottom: 100px;
 }
-.page3{
+.page3 {
   padding-top: 100px;
   padding-bottom: 100px;
 }
