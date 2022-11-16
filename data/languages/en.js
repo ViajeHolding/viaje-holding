@@ -17,9 +17,18 @@ module.exports = {
     },
   },
   home: {
-    title: 'Reduce Your Carbon',
-    excerpt:
-      'Carbon-Free VIAJE is an Eco-Friendly ESG investment and management company that provides travel and cultural contents and handling a metaverse service fused with the 4th industry by developing an online streaming service with both online and offline audiences',
+    banner: {
+      title: 'Reduce Your Carbon',
+      excerpt:
+        'Carbon-Free VIAJE is an Eco-Friendly ESG investment and management company that provides travel and cultural contents and handling a metaverse service fused with the <span class="ordinal">4th</span> industry by developing an online streaming service with both online and offline audiences',
+    },
+    introduction: {
+      title: 'Reduce Your Carbon',
+      excerpt: [
+        'All used value of VIA POINT by the users and partners will be converted and expressed as a Carbon Storage Value.',
+        'The Carbon Reduced Value will be expressed for the users to aware of in contributing to make a green Environment.',
+      ],
+    },
   },
   profile: {
     banner: {

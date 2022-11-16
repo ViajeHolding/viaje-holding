@@ -164,11 +164,13 @@
 /* =============== Breakpoints =============== */
 
 @media screen and (max-width: 992px) {
-  .home .banner .carousel-item--06 {
+  .home .banner .carousel-item--06,
+  .home .pages-summary__card--partnership {
     background-position: 80% center;
   }
 
-  .home .banner .carousel-item--07 {
+  .home .banner .carousel-item--07,
+  .home .pages-summary__card--contact {
     background-position: 80% center;
   }
 
@@ -190,7 +192,8 @@
     background-position: 80% center;
   }
 
-  .home .banner .carousel-item--05 {
+  .home .banner .carousel-item--05,
+  .home .pages-summary__card--service {
     background-position: 80% center;
   }
 

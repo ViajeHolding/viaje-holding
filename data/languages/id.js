@@ -17,9 +17,18 @@ module.exports = {
     },
   },
   home: {
-    title: 'Reduce Your Carbon',
-    excerpt:
-      'Carbon-Free VIAJE adalah perusahaan investasi dan manajemen LST Ramah Lingkungan yang menyediakan konten perjalanan, budaya, dan menangani layanan metaverse yang menyatu dengan industry ke-4 dengan mengembangkan layanan streaming online dengan audiens online dan offline.',
+    banner: {
+      title: 'Reduce Your Carbon',
+      excerpt:
+        'Carbon-Free VIAJE adalah perusahaan investasi dan manajemen LST Ramah Lingkungan yang menyediakan konten perjalanan, budaya, dan menangani layanan metaverse yang menyatu dengan industry ke-4 dengan mengembangkan layanan streaming online dengan audiens online dan offline.',
+    },
+    introduction: {
+      title: 'Reduce Your Carbon',
+      excerpt: [
+        'Semua penghasilan dari VIA POIN yang digunakan oleh pengguna dan mitra dinyatakan sebagai Nilai Pengurangan Karbon yang akan digunakan untuk melindungi lingkungan.',
+        'Nilai Pengurangan Karbon akan diungkapkan agar pengguna sadar dalam berkontribusi membuat ramah lingkungan.',
+      ],
+    },
   },
   profile: {
     banner: {
