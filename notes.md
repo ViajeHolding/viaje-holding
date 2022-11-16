@@ -46,3 +46,25 @@ Finished item will be marked as done. ✅
 - Lang data middleware.
 - Add Korean language. ✅
 - Language `service.introduction.body` to have multiple paragraphs.
+
+---
+
+## Feedback Log
+
+### Tuesday, November 15, 2022
+
+- Subtitle home banner alignment & size. ✅
+- Body text width to be shortened for it to be readable. ✅
+- Blurry image assets.
+- Bigger body text needed. ✅
+- Service Page:
+  - "A Variety of Bikes" without "A". ✅
+  - Smaller bike picture. ✅
+  - ID Language Easy Payment section: Took → Toko ✅
+- Lower the home banner text. ✅
+- Footer text copy change. Below the logo. Waiting for copy...
+- Language: Indonesian, not Indonesia. ✅
+- Varietas → Variasi. ✅
+- Profile page:
+  - Don't bold text on Korean. ✅
+- Banner background alignment problems on smaller screens. ✅

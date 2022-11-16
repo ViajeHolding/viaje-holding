@@ -61,7 +61,7 @@ module.exports = {
       body: 'The very first Rental Business of EV Mobility will be starting in Bali. Carbon-Free VIAJE contributed not only to give convenience to tourism for tourists but also to &apos;Carbon-Free&apos; which reduces carbon- dioxide in internal combustion engines and provides a variety of services for Value Consumption and Eco-Friendly travels.',
     },
     bikeShowcase: {
-      title: 'A Variety of Bikes',
+      title: 'Variety of Bikes',
       subtitle: 'Choose your own bikes that suits your taste',
     },
     easyPayment: {

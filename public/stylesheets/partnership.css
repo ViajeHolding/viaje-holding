@@ -14,6 +14,7 @@
 .partnership .partners__title {
   text-align: center;
   color: var(--green);
+  font-weight: 600;
 }
 
 .partnership .partners__logo {
@@ -25,6 +26,10 @@
 /* =============== Breakpoints =============== */
 
 @media screen and (max-width: 992px) {
+  .partnership .banner {
+    background-position: 80% center;
+  }
+
   .partnership h1.banner__title {
     font-size: 3rem;
   }

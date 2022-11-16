@@ -1,7 +1,7 @@
 /*======== COMPANY PROFILE====== */
 
 /* HERO PAGE */
-.hero {
+.company-profile .hero {
   background-image: url(../img/BANNER\ COMPANY\ PROFILE.png);
   background-position: center;
   background-size: cover;
@@ -9,11 +9,18 @@
   position: relative;
 }
 
+.company-profile .hero__title {
+  font-weight: bold;
+  letter-spacing: 0.4rem;
+  text-transform: uppercase;
+}
+
 h4.text1 {
   color: #3ee63e;
   margin-bottom: 25px;
   font-size: 1.9rem;
 }
+
 .hero::after {
   content: '';
   width: 100%;
@@ -42,6 +49,8 @@ a.btn {
 .company-profile .introduction__info-title {
   margin-bottom: 4rem;
   color: var(--green);
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 .company-profile .introduction__art {
@@ -54,7 +63,6 @@ a.btn {
 }
 
 .company-profile .introduction__info-excerpt {
-  /* color: black; */
   color: var(--body);
 }
 /* img */
@@ -79,13 +87,16 @@ section.project {
 }
 
 p.small-1 {
-  font-size: 0.9rem;
-  /* color: #000000e5; */
+  /* font-size: 0.9rem; */
   color: var(--body);
 }
 .viaje-picture {
   margin-top: 50px;
   margin-bottom: 40px;
+}
+
+.company-profile .viaje-project__title {
+  font-weight: 600;
 }
 
 /* =====Business model====== */
@@ -108,8 +119,11 @@ h4.text3 {
 p.business-text {
   margin-top: -150px;
   text-align: center;
-  /* color: black; */
   color: var(--body);
+}
+
+.company-profile .business-model__title {
+  font-weight: 600;
 }
 
 /* =====Viaje Group Companies==== */
@@ -132,6 +146,10 @@ p.small {
   font-size: 0.9rem;
   /* color: #000000e5; */
   color: var(--body);
+}
+
+.company-profile .viaje-group__title {
+  font-weight: 600;
 }
 
 /* Jarak Per Section*/

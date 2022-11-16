@@ -8,7 +8,7 @@
 
 <%- include('partials/header.ejs') %> <%- include('partials/navbar.ejs', { lang, data: navbar }) %>
 
-<body class="services">
+<body class="services <%= lang %>">
   <section class="banner page-banner page-section">
     <div class="container">
       <div class="row">
@@ -116,7 +116,7 @@
           <img src="/img/service-icon-metaverse.png" alt="Metaverse" class="metaverse__img">
         </div>
       </div>
-    </div> 
+    </div>
 
     <div class="container">
       <div class="row">

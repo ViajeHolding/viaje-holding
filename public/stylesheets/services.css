@@ -15,6 +15,7 @@
 .services .introduction__info-title {
   margin-bottom: 2rem;
   color: var(--green);
+  font-weight: 600;
 }
 
 .services .introduction__art {
@@ -38,6 +39,7 @@
 
 .services .bike-showcase__title {
   color: var(--green);
+  font-weight: 600;
 }
 
 .services .bike-showcase__img {
@@ -46,13 +48,13 @@
 
 .services .bike-showcase__img img {
   display: block;
-  width: 60%;
+  width: 50%;
   height: auto;
   margin: 0 auto;
 }
 
 .services .bike-showcase__features-icons {
-  width: 80%;
+  width: 60%;
   margin: 0 auto;
 }
 
@@ -78,6 +80,7 @@
 .services .easy-payment__info-title {
   margin-bottom: 1.5rem;
   color: var(--green);
+  font-weight: 600;
 }
 
 /* =============== Metaverse Section =============== */
@@ -98,6 +101,7 @@
 .services .metaverse__info-title {
   margin-bottom: 1.5rem;
   color: var(--green);
+  font-weight: 600;
 }
 
 /* =============== Breakpoints =============== */
@@ -117,8 +121,28 @@
     width: 80%;
   }
 
+  .services .bike-showcase__img img {
+    width: 60%;
+  }
+
+  .services .bike-showcase__features-icons {
+    width: 80%;
+  }
+
   .services .easy-payment {
     background-position: -450px 45%;
+  }
+
+  .services .easy-payment .container-fluid .row,
+  .services .metaverse .container-fluid .row {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .services .easy-payment .container-fluid .col,
+  .services .metaverse .container-fluid .col {
+    padding-right: 0;
+    padding-left: 0;
   }
 
   .services .metaverse {
@@ -127,6 +151,10 @@
 }
 
 @media screen and (max-width: 768px) {
+  .services .banner {
+    background-position: 80% center;
+  }
+
   .services .introduction .row > div:nth-child(1) {
     order: 2;
   }
