@@ -107,7 +107,7 @@ p.small-1 {
 img.icon3 {
   width: 100%;
   height: auto;
-  margin-top: -30px;
+  margin-bottom: 5rem;
 }
 /* section.business-model {
   padding-top: 120px;
@@ -116,11 +116,11 @@ img.icon3 {
 
 h4.text3 {
   color: var(--green);
-  margin-bottom: -50px;
+  margin-bottom: 5rem;
   font-size: 1.9rem;
 }
 p.business-text {
-  margin-top: -150px;
+  /* margin-top: -150px; */
   text-align: center;
   color: var(--body);
 }

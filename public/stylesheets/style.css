@@ -26,6 +26,19 @@ body.kr {
   margin-bottom: 5rem;
 }
 
+/* =============== Bootstrap Override =============== */
+
+@media screen and (min-width: 1400px) {
+  body {
+    font-size: 1.3rem;
+  }
+
+  .container {
+    width: 90%;
+    max-width: 1740px;
+  }
+}
+
 /* =============== Page Banner =============== */
 
 .page-banner {
