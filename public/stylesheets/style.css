@@ -118,9 +118,15 @@ body.kr {
 }
 
 .page-footer__title {
+  margin-bottom: 1rem;
   font-size: 1.3rem;
   color: white;
   font-weight: 600;
+}
+
+.page-footer__navigation {
+  width: 70%;
+  margin: 0 0 0 auto;
 }
 
 .page-footer__navigation-list {
@@ -167,11 +173,28 @@ body.kr {
   - 992
   - 1200
   - 1400
+  - 1600
 */
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1600px) {
   body {
+    font-size: 1.5rem;
+  }
+
+  .page-section {
+    margin-bottom: 6rem;
+  }
+
+  .page-banner__title {
+    font-size: 6rem;
+  }
+
+  .primary-btn {
     font-size: 1.3rem;
+  }
+
+  .page-footer__title {
+    font-size: 1.5rem;
   }
 }
 

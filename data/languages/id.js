@@ -8,7 +8,7 @@ module.exports = {
   },
   footer: {
     profile:
-      'Eco-Friendly companies, various technology companies, and customers who use the services into the Ecosystem to compose the VIAJE&apos;s Ecosystem.',
+      'Pengenalan strategi LST untuk lingkungan global masa depan yang lebih baik akan memberikan tantangan dan peluang unik bagi bisnis, masyarakat, dan investor untuk memengaruhi arus investasi. Oleh karena itu, Carbon-Free VIAJE bertujuan Proyek Ramah Lingkungan secara global untuk melestarikan alam.',
     navigation: {
       title: 'Useful Links',
       contactUs: 'Hubungi Kami',

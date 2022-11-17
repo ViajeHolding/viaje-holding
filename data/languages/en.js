@@ -8,7 +8,7 @@ module.exports = {
   },
   footer: {
     profile:
-      'Eco-Friendly companies, various technology companies, and customers who use the services into the Ecosystem to compose the VIAJE&apos;s Ecosystem.',
+      'The introduction of ESG strategies for a better future global environment will provide unique challenges and opportunities for business, society and investors to influence the investment flows. Therefore, Carbon-Free VIAJE aims for a global Eco-Friendly projects to conserve the mother nature.',
     navigation: {
       title: 'Useful Links',
       contactUs: 'Contact Us',
