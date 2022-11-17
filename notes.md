@@ -36,6 +36,7 @@ Finished item will be marked as done. ✅
 - Company profile image multilingual.
 - Transparent navbar on home and white background on scroll.
 - Home page banner teks padding to follow container.
+- Disable bike showcase swipe on desktop.
 
 ## Back-end
 
@@ -78,3 +79,9 @@ Finished item will be marked as done. ✅
 - `font-variant-numeric`.
 - Bigger text for buttons. ✅
 - Bike showcase slider.
+
+### Thursday, November 17, 2022
+
+- Overall bigger design for 1400px++. ✅
+- Footer text. Check Telegram. ✅
+- Proofread for periods at the end of texts.

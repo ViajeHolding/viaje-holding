@@ -3,32 +3,40 @@
     <footer class="page-footer">
       <div class="container">
         <div class="row">
-          <div class="page-footer__section page-footer__info col-12 col-sm-6 col-md-6">
-            <img src="/img/viaje-holdings-white.png" alt="VIAJE Logo White" class="page-footer__logo" />
-
-            <p class="page-footer__excerpt"><%- profile %></p>
+          <div class="page-footer__section col-12 col-sm-6 col-md-6">
+            <div class="page-footer__info">
+              <img src="/img/viaje-holdings-white.png" alt="VIAJE Logo White" class="page-footer__logo" />
+  
+              <p class="page-footer__excerpt"><%- profile %></p>
+            </div>
           </div>
-          <div class="page-footer__section page-footer__navigation col-12 col-sm-6 col-md-3">
-            <h3 class="page-footer__title"><%- navigation.title %></h3>
 
-            <ul class="page-footer__navigation-list">
+          <div class="page-footer__section col-12 col-sm-6 col-md-3">
+            <div class="page-footer__navigation">
+              <h3 class="page-footer__title"><%- navigation.title %></h3>
+  
+              <ul class="page-footer__navigation-list">
+                <li class="page-footer__navigation-item">
+                  <a href="/<%= lang %>/contact" class="page-footer__navigation-link"><%- navigation.contactUs %></a>
+                </li>
+                <li class="page-footer__navigation-item">
+                  <a href="/<%= lang %>/profile" class="page-footer__navigation-link"><%- navigation.profile %></a>
+                </li>
               <li class="page-footer__navigation-item">
-                <a href="/<%= lang %>/contact" class="page-footer__navigation-link"><%- navigation.contactUs %></a>
-              </li>
-              <li class="page-footer__navigation-item">
-                <a href="/<%= lang %>/profile" class="page-footer__navigation-link"><%- navigation.profile %></a>
-              </li>
-            <li class="page-footer__navigation-item">
-                <a href="/<%= lang %>/service" class="page-footer__navigation-link"><%- navigation.service %></a>
-              </li>
-            </ul>
+                  <a href="/<%= lang %>/service" class="page-footer__navigation-link"><%- navigation.service %></a>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="page-footer__section page-footer__app-download col-12 col-sm-6 col-md-3">
-            <h3 class="page-footer__title">Download Viaje App</h3>
 
-            <div class="page-footer__app-download-icons">
-              <img src="/img/apple-store-logo.png" alt="Apple Store Icon" class="page-footer__app-download-icon" />
-              <img src="/img/google-playstore-logo.png" alt="Google Play Store Icon" class="page-footer__app-download-icon" />
+          <div class="page-footer__section col-12 col-sm-6 col-md-3">
+            <div class="page-footer__app-download">
+              <h3 class="page-footer__title">Download Viaje App</h3>
+  
+              <div class="page-footer__app-download-icons">
+                <img src="/img/apple-store-logo.png" alt="Apple Store Icon" class="page-footer__app-download-icon" />
+                <img src="/img/google-playstore-logo.png" alt="Google Play Store Icon" class="page-footer__app-download-icon" />
+              </div>
             </div>
           </div>
         </div>

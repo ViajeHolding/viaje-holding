@@ -33,8 +33,36 @@
   margin-bottom: 8rem;
 }
 
+.services .bike-showcase .tns-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.services .bike-showcase .tns-controls button {
+  width: 40px;
+  height: 40px;
+  margin: 0 0.5rem;
+  background-color: var(--green);
+  border: 1px solid var(--green);
+  border-radius: 50%;
+  color: white;
+  font-weight: bold;
+  outline: 1px solid var(--green-dark-1);
+  transition: background-color 200ms ease-in;
+}
+
+.services .bike-showcase .tns-controls button:hover {
+  background-color: var(--green-dark-1);
+}
+
+.services .bike-showcase .tns-nav {
+  display: none;
+}
+
 .services .bike-showcase__header {
   text-align: center;
+  margin-bottom: 2rem;
 }
 
 .services .bike-showcase__title {
@@ -43,14 +71,24 @@
 }
 
 .services .bike-showcase__img {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .services .bike-showcase__img img {
   display: block;
-  width: 50%;
+  width: 100%;
   height: auto;
   margin: 0 auto;
+  filter: grayscale(1);
+  opacity: 0.5;
+  transform: scale(50%);
+  transition: all 200ms ease-in;
+}
+
+.services .bike-showcase__img-active img {
+  filter: none;
+  opacity: 1;
+  transform: scale(100%);
 }
 
 .services .bike-showcase__features-icons {
@@ -105,6 +143,26 @@
 }
 
 /* =============== Breakpoints =============== */
+
+@media screen and (min-width: 1600px) {
+  .services .introduction__info-title,
+  .services .bike-showcase__title,
+  .services .easy-payment__info-title,
+  .services .metaverse__info-title {
+    font-size: 3rem;
+  }
+
+  .services .easy-payment {
+    background-position: -320px 45%;
+    background-size: 70%;
+  }
+
+  .services .metaverse {
+    padding-top: 14rem;
+    padding-bottom: 14rem;
+    background-size: 50%;
+  }
+}
 
 @media screen and (max-width: 1200px) {
   .services .easy-payment {

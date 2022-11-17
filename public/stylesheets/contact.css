@@ -27,6 +27,16 @@
 
 /* =============== Breakpoints =============== */
 
+@media screen and (min-width: 1600px) {
+  .contact .contact-info__item-title {
+    font-size: 2.3rem;
+  }
+
+  .contact .contact-info__item-contact {
+    font-size: 1.5rem;
+  }
+}
+
 @media screen and (max-width: 992px) {
   .contact .banner {
     background-position: 80% center;
