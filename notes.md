@@ -36,6 +36,7 @@ Finished item will be marked as done. ✅
 - Company profile image multilingual.
 - Transparent navbar on home and white background on scroll.
 - Home page banner teks padding to follow container.
+- Develop bike slider further on the side.
 - Disable bike showcase swipe on desktop.
 
 ## Back-end

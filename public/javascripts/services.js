@@ -24,22 +24,13 @@ class BikeShowcase {
       (item) => item.id === `tns1-item${nextIndex}`,
     );
 
-    // Remove active class from last iteration
     previousActive.classList.remove('bike-showcase__img-active');
-
-    // Find the current active item.
-
-    // Add active class to the new active item.
     nextActive.classList.add('bike-showcase__img-active');
 
-    // Update index state..
     this.activeIndex = nextIndex;
   }
 
   handlePrev() {
-    // Iteration update here...
-    // Update method will have the latest active index...
-
     const prevIndex = this.activeIndex;
     const nextIndex = this.activeIndex - 1;
 
@@ -47,7 +38,6 @@ class BikeShowcase {
   }
 
   handleNext() {
-    // Iteration update here...
     const prevIndex = this.activeIndex;
     const nextIndex = this.activeIndex + 1;
 
@@ -80,7 +70,7 @@ function initiateBikeShowcase() {
 function init() {
   bannerButton.addEventListener('click', handleBannerButton);
 
-  initiateBikeShowcase();
+  // initiateBikeShowcase();
 }
 
 ready(init);

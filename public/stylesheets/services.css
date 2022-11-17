@@ -76,6 +76,15 @@
 
 .services .bike-showcase__img img {
   display: block;
+  width: 40%;
+  height: auto;
+  margin: 0 auto;
+}
+
+/* =============== Bike Showcase Slider =============== */
+
+/* .services .bike-showcase__img img {
+  display: block;
   width: 100%;
   height: auto;
   margin: 0 auto;
@@ -89,7 +98,7 @@
   filter: none;
   opacity: 1;
   transform: scale(100%);
-}
+} */
 
 .services .bike-showcase__features-icons {
   width: 60%;
