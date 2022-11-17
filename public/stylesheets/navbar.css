@@ -63,6 +63,19 @@ img.logo {
   height: auto;
 }
 
+@media screen and (min-width: 1400px) {
+  .nav-link {
+    color: var(--body);
+    text-shadow: 10px var(--body);
+    font-size: 1.2rem;
+    position: relative;
+  }
+  img.logo {
+    width: 200px;
+    height: auto;
+  }
+}
+
 @media (max-width: 992px) {
   .ul-bg {
     background-color: #ffffff;

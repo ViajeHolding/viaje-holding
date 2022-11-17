@@ -26,21 +26,6 @@ body.kr {
   margin-bottom: 5rem;
 }
 
-/* =============== Bootstrap Override =============== */
-
-@media screen and (min-width: 1400px) {
-  .nav-link {
-    color: var(--body);
-    text-shadow: 10px var(--body);
-    font-size: 1.2rem;
-    position: relative;
-  }
-  img.logo {
-    width: 200px;
-    height: auto; 
-  }
-}
-
 /* =============== Page Banner =============== */
 
 .page-banner {
