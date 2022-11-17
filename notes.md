@@ -68,3 +68,13 @@ Finished item will be marked as done. ✅
 - Profile page:
   - Don't bold text on Korean. ✅
 - Banner background alignment problems on smaller screens. ✅
+
+### Wednesday, November 16, 2022
+
+- Bigger font size on 1400px++ screens. ✅
+- New home page introductory text. ✅
+- Vertically centered home banner text. ✅
+- New Korean text.
+- `font-variant-numeric`.
+- Bigger text for buttons. ✅
+- Bike showcase slider.

@@ -17,9 +17,18 @@ module.exports = {
     },
   },
   home: {
-    title: 'Reduce Your Carbon',
-    excerpt:
-      'Carbon-Free VIAJE는 여행 및 문화 콘텐츠를 제공하며, 온라인 . 오프라인을 아우르는 온라인 스트리밍 서비스를 개발하여 4차 산업과 융합한 메타버스 서비스를 제공하는 친화적인 기업입니다.',
+    banner: {
+      title: 'Reduce Your Carbon',
+      excerpt:
+        'Carbon-Free VIAJE는 여행 및 문화 콘텐츠를 제공하며, 온라인 . 오프라인을 아우르는 온라인 스트리밍 서비스를 개발하여 4차 산업과 융합한 메타버스 서비스를 제공하는 친화적인 기업입니다.',
+    },
+    introduction: {
+      title: 'Reduce Your Carbon',
+      excerpt: [
+        '사용자와 파트너가 사용한 VIA POINT의 모든 사용 값은 탄소 저감 수치로 표기하여 환경 보호에 사용됩니다.',
+        '탄소 저감 수치는 친환경을 만드는데 기여함에 있어 사용자가 인식할 수 있도록 표현한 것입니다.',
+      ],
+    },
   },
   profile: {
     banner: {

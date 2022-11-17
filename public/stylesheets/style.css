@@ -43,8 +43,19 @@ body.kr {
 
 .page-banner {
   height: 100vh;
-  padding-top: 10rem;
   color: white;
+}
+
+.page-banner .container {
+  height: 100%;
+}
+
+.page-banner .row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  height: 100%;
 }
 
 .page-banner__title {
@@ -66,6 +77,8 @@ body.kr {
   background-color: var(--green);
   border-color: var(--green);
   color: white;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
 }
 
 .primary-btn:hover {
@@ -153,6 +166,12 @@ body.kr {
   - 1200
   - 1400
 */
+
+@media screen and (min-width: 1400px) {
+  body {
+    font-size: 1.3rem;
+  }
+}
 
 @media screen and (max-width: 992px) {
   body {

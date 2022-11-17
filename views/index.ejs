@@ -1,6 +1,6 @@
 <% const { navbar, footer, home: {
-  title,
-  excerpt,
+  banner,
+  introduction
 }, profile, service, partnership, contact } = data; %>
 
 <%- include('partials/header.ejs') %> <%- include('partials/navbar.ejs', { lang, data: navbar }) %>
@@ -24,9 +24,9 @@
         <div class="container">
           <div class="row">
             <div class="col-md-8 col-lg-6">
-              <h1 class="banner__info-headline"><%- title %></h1>
+              <h1 class="banner__info-headline"><%- banner.title %></h1>
         
-              <p class="banner__info-excerpt"><%- excerpt %></p>
+              <p class="banner__info-excerpt"><%- banner.excerpt %></p>
             </div>
           </div>
         </div>
@@ -36,9 +36,10 @@
     <section class="introduction container">
       <div class="row">
         <div class="col-12 col-md-8">
-          <h2 class="introduction__title"><%- title %></h2>
+          <h2 class="introduction__title"><%- introduction.title %></h2>
     
-          <p class="introduction__excerpt"><%- excerpt %></p>
+          <p class="introduction__excerpt"><%- introduction.excerpt[0] %></p>
+          <p class="introduction__excerpt"><%- introduction.excerpt[1] %></p>
         </div>
       </div>
     </section>
