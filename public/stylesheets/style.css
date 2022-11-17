@@ -29,13 +29,15 @@ body.kr {
 /* =============== Bootstrap Override =============== */
 
 @media screen and (min-width: 1400px) {
-  body {
-    font-size: 1.3rem;
+  .nav-link {
+    color: var(--body);
+    text-shadow: 10px var(--body);
+    font-size: 1.2rem;
+    position: relative;
   }
-
-  .container {
-    width: 90%;
-    max-width: 1740px;
+  img.logo {
+    width: 200px;
+    height: auto; 
   }
 }
 

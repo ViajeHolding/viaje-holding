@@ -180,3 +180,12 @@ p.small {
     background-repeat: no-repeat;
   }
 }
+
+@media screen and (min-width: 1400px) {
+  p.small{
+    font-size: 1.5rem;
+  }
+  h4.big-title{
+    font-size: 3rem;
+  }
+}
