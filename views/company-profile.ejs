@@ -35,7 +35,7 @@ switch (lang) {
 <body class="company-profile <%= lang %>">
   <!-- HERO -->
 
-  <div class="hero vh-100 d-flex align-items-center page-section">
+  <div class="hero page-section">
     <div class="container">
       <div class="row">
         <div class="col-lg-7">
@@ -105,22 +105,25 @@ switch (lang) {
 
   <!-- BUSINESS MODEL -->
 
-<section class="page2" id="business-model">
+<section class="page2" id="business-model" class="business-model">
     <div class="container">
       <div class="row align-items-center">
-        <div class="col-md-4 mx-auto text-center">
+        <div class="text-center">
           <h4 class="text3 text-uppercase business-model__title big-title"><%- businessModel.title %></h4>
         </div>
         <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-md-6 col-xl-8">
-              <img class="icon3" src="/img/business-model-icon.png" />
+          <div class="row business-model__row business-model__icons">
+            <div class="col-12 col-md-9 col-lg-8">
+              <img src="/img/business-model-icon-v2.png" alt="Business Model" class="business-model__icon" />
+            </div>
+          </div>
+
+          <div class="row business-model__row">
+            <div class="col-lg-9">
               <p class="business-text text-center small"><%- businessModel.body %></p>
             </div>
-           </div>
-
+          </div>
         </div>
-         
       </div>
   </section>
 

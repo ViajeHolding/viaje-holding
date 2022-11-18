@@ -3,7 +3,7 @@
     <footer class="page-footer">
       <div class="container">
         <div class="row">
-          <div class="page-footer__section col-12 col-sm-6 col-md-6">
+          <div class="page-footer__section col-12 col-md-6">
             <div class="page-footer__info">
               <img src="/img/viaje-holdings-white.png" alt="VIAJE Logo White" class="page-footer__logo" />
   
@@ -11,7 +11,7 @@
             </div>
           </div>
 
-          <div class="page-footer__section col-12 col-sm-6 col-md-3">
+          <div class="page-footer__section col-12 col-md-3">
             <div class="page-footer__navigation">
               <h3 class="page-footer__title"><%- navigation.title %></h3>
   
@@ -22,20 +22,25 @@
                 <li class="page-footer__navigation-item">
                   <a href="/<%= lang %>/profile" class="page-footer__navigation-link"><%- navigation.profile %></a>
                 </li>
-              <li class="page-footer__navigation-item">
+                <li class="page-footer__navigation-item">
                   <a href="/<%= lang %>/service" class="page-footer__navigation-link"><%- navigation.service %></a>
                 </li>
               </ul>
             </div>
           </div>
 
-          <div class="page-footer__section col-12 col-sm-6 col-md-3">
+          <div class="page-footer__section col-12 col-md-3">
             <div class="page-footer__app-download">
               <h3 class="page-footer__title">Download Viaje App</h3>
   
               <div class="page-footer__app-download-icons">
-                <img src="/img/apple-store-logo.png" alt="Apple Store Icon" class="page-footer__app-download-icon" />
-                <img src="/img/google-playstore-logo.png" alt="Google Play Store Icon" class="page-footer__app-download-icon" />
+                <a href="https://apps.apple.com/id/app/viaje/id1594769152" class="paget-footer__app-download-link">
+                  <img src="/img/apple-store-logo.png" alt="Apple Store Icon" class="page-footer__app-download-icon" />
+                </a>
+
+                <a href="https://play.google.com/store/apps/details?id=com.yourcompany.viajeFrontendApp" class="paget-footer__app-download-link">
+                  <img src="/img/google-playstore-logo.png" alt="Google Play Store Icon" class="page-footer__app-download-icon" />
+                </a>
               </div>
             </div>
           </div>

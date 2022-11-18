@@ -37,6 +37,8 @@
 ### Friday, November 18, 2022
 
 - App download icons to go to app store.
-- Add MBI logo to the top of partnership page.
+  - Apple: https://apps.apple.com/id/app/viaje/id1594769152 ✅
+  - Google: https://play.google.com/store/apps/details?id=com.yourcompany.viajeFrontendApp ✅
+- Add MBI logo to the top of partnership page. ✅
 - Profile Page:
-  - Business model icon even spacing.
+  - Business model icon even spacing. ✅
