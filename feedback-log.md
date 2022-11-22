@@ -42,3 +42,5 @@
 - Add MBI logo to the top of partnership page. ✅
 - Profile Page:
   - Business model icon even spacing. ✅
+- Fix footer spacing issues on small screens.
+- Fix profile page spacing issue on small screens.

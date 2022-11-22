@@ -22,6 +22,10 @@ body.kr {
   font-weight: 400;
 }
 
+.main-container {
+  overflow-x: hidden;
+}
+
 .page-section {
   margin-bottom: 5rem;
 }
