@@ -1,16 +1,32 @@
 /*======== COMPANY PROFILE====== */
 
+.company-profile .big-title {
+  margin-bottom: 3rem;
+  font-size: 1.6rem;
+}
+
 /* HERO PAGE */
-  .company-profile .hero {
-    background-image: url(../img/BANNER\ COMPANY\ PROFILE.png) ;
-    background-position: center center;
-    background-size: cover;
-    background-attachment: fixed;
-    width: 100vw;
-    height: 100vh;
-    position: relative;
-    background-repeat: no-repeat;
-  }
+.company-profile .hero {
+  background-image: url(../img/BANNER\ COMPANY\ PROFILE.png);
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 3rem;
+  position: relative;
+  background-repeat: no-repeat;
+}
+
+.company-profile .hero .container,
+.company-profile .hero .row {
+  height: 100%;
+}
+
+.company-profile .hero .row {
+  flex-direction: column;
+  justify-content: center;
+}
 
 .company-profile .hero__title {
   font-weight: bold;
@@ -50,7 +66,6 @@ a.btn {
 }
 
 .company-profile .introduction__info-title {
-  margin-bottom: 4rem;
   color: var(--green);
   font-weight: 600;
   text-transform: uppercase;
@@ -109,24 +124,32 @@ img.icon3 {
   height: auto;
   margin-bottom: 5rem;
 }
-/* section.business-model {
-  padding-top: 120px;
-  padding-bottom: 120px;
-} */
 
 h4.text3 {
   color: var(--green);
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
   font-size: 1.9rem;
 }
 p.business-text {
-  /* margin-top: -150px; */
   text-align: center;
   color: var(--body);
 }
 
+.company-profile .business-model__row {
+  justify-content: center;
+}
+
 .company-profile .business-model__title {
   font-weight: 600;
+}
+
+.company-profile .business-model__icons {
+  margin-bottom: 3rem;
+}
+
+.company-profile .business-model__icon {
+  width: 100%;
+  height: auto;
 }
 
 /* =====Viaje Group Companies==== */
@@ -146,8 +169,7 @@ img.group {
 
 /* text */
 p.small {
-  font-size: 1.1rem;
-  /* color: #000000e5; */
+  font-size: 1rem;
   color: var(--body);
 }
 
@@ -168,9 +190,21 @@ p.small {
   padding-bottom: 100px;
 }
 
-@media (max-width:768px) {
+/* =============== Breakpoints =============== */
+
+@media screen and (max-width: 992px) {
+  .company-profile .big-title {
+    font-size: 1.6rem;
+  }
+
+  .company-profile p.small {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
   .hero {
-    background-image: url(../img/BANNER\ COMPANY\ PROFILE.png) ;
+    background-image: url(../img/BANNER\ COMPANY\ PROFILE.png);
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
@@ -181,11 +215,23 @@ p.small {
   }
 }
 
+@media screen and (max-width: 576px) {
+  .company-profile .hero {
+    padding-top: 5rem;
+  }
+}
+
 @media screen and (min-width: 1400px) {
-  p.small{
+  p.small {
     font-size: 1.5rem;
   }
-  h4.big-title{
-    font-size: 3rem;
+
+  .company-profile .big-title {
+    margin-bottom: 4rem;
+    font-size: 2.6rem;
+  }
+
+  .company-profile .hero__title {
+    font-size: 5rem;
   }
 }

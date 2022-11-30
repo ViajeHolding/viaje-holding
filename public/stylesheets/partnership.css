@@ -7,21 +7,31 @@
 
 /* =============== Partners Logo =============== */
 
-.partnership .partners .row:nth-child(2) .col {
-  text-align: center;
+.partnership .partners {
+  margin-bottom: 8rem;
 }
 
 .partnership .partners__title {
+  margin-bottom: 3rem;
   text-align: center;
   color: var(--green);
   font-weight: 600;
 }
 
-.partnership .partners__logo {
-  position: relative;
-  top: -100px;
+.partnership .partners__logo-col {
+  text-align: center;
+}
+
+.partnership .partners__logo-mbi {
+  width: 40%;
+  margin: 0 auto;
+  max-width: 530px;
+}
+
+.partnership .partners__logo-partners {
   width: 100%;
-  max-width: 1600px;
+  margin: 0 auto;
+  max-width: 1400px;
 }
 
 /* =============== Breakpoints =============== */

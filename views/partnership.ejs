@@ -3,9 +3,16 @@
   partners
 } } = data; %>
 
-<%- include('partials/header.ejs') %> <%- include('partials/navbar.ejs', { lang, data: navbar }) %>
+<%- include('partials/header.ejs') %> 
 
 <body class="partnership <%= lang %>">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MN7NWL6"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <%- include('partials/navbar.ejs', { lang, data: navbar }) %>
+
   <section class="banner page-banner page-section">
     <div class="container">
       <div class="row">
@@ -27,9 +34,13 @@
       </div>
     </div>
 
-    <div class="row">
-      <div class="col">
-        <img src="/img/logo-partnership.png" alt="Partners Logo" class="partners__logo" />
+    <div class="row partners__logo-row">
+      <div class="col-12 partners__logo-col partners__logo-col--mbi">
+        <img src="/img/MBI-logo.png" alt="MBI Logo" class="partners__logo-mbi" />
+      </div>
+
+      <div class="col-12 partners__logo-col partners__logo-col--partners">
+        <img src="/img/logo-partnership.png" alt="Partners Logo" class="partners__logo-partners" />
       </div>
     </div>
   </section>

@@ -3,9 +3,16 @@
   introduction
 }, profile, service, partnership, contact } = data; %>
 
-<%- include('partials/header.ejs') %> <%- include('partials/navbar.ejs', { lang, data: navbar }) %>
+<%- include('partials/header.ejs') %> 
 
 <body class="home <%= lang %>">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MN7NWL6"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <%- include('partials/navbar.ejs', { lang, data: navbar }) %>
+
   <main class="main-container">
     <section class="banner">
       <div class="banner__carousel carousel slide carousel-fade" data-bs-ride="carousel">

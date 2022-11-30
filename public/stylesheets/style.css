@@ -22,6 +22,10 @@ body.kr {
   font-weight: 400;
 }
 
+.main-container {
+  overflow-x: hidden;
+}
+
 .page-section {
   margin-bottom: 5rem;
 }
@@ -84,7 +88,7 @@ body.kr {
 
 .page-footer {
   margin-top: 5rem;
-  padding: 2rem 0;
+  padding: 3rem 0 2rem;
   background-color: var(--dark);
   color: white;
 }
@@ -171,7 +175,7 @@ body.kr {
   }
 
   .page-banner__title {
-    font-size: 6rem;
+    font-size: 5rem;
   }
 
   .primary-btn {
@@ -204,6 +208,11 @@ body.kr {
 
   .page-footer__info {
     margin-bottom: 2rem;
+  }
+
+  .page-footer__navigation {
+    width: 100%;
+    margin: 0;
   }
 
   .page-footer__app-download {
