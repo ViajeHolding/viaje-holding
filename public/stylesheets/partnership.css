@@ -14,8 +14,6 @@
 .partnership .partners__title {
   margin-bottom: 3rem;
   text-align: center;
-  color: var(--green);
-  font-weight: 600;
 }
 
 .partnership .partners__logo-col {
@@ -47,10 +45,6 @@
     background-position: 80% center;
   }
 
-  .partnership h1.banner__title {
-    font-size: 3rem;
-  }
-
   .partnership .partners__logo {
     top: -50px;
   }
@@ -59,12 +53,5 @@
 @media screen and (max-width: 768px) {
   .partnership .partners__logo {
     top: -30px;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  .partnership h1.banner__title {
-    font-size: 2rem;
-    letter-spacing: 0.3rem;
   }
 }

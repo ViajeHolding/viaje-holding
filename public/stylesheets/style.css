@@ -30,6 +30,13 @@ body.kr {
   margin-bottom: 5rem;
 }
 
+.page-section__title {
+  margin-bottom: 1.6rem;
+  color: var(--green);
+  font-size: 2.1rem;
+  font-weight: 600;
+}
+
 /* =============== Page Banner =============== */
 
 .page-banner {
@@ -157,12 +164,19 @@ body.kr {
 /* =============== Breakpoints =============== */
 
 /* 
+  Max-width
   - 576
   - 768
   - 992
   - 1200
+
+  Default
   - 1400
+
+  Min-width
   - 1600
+
+  576, 768, 992, 1200 < 1400 > 1600
 */
 
 @media screen and (min-width: 1600px) {
@@ -172,6 +186,10 @@ body.kr {
 
   .page-section {
     margin-bottom: 6rem;
+  }
+
+  .page-section__title {
+    font-size: 3rem;
   }
 
   .page-banner__title {
@@ -187,11 +205,17 @@ body.kr {
   }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1200px) {
   body {
     font-size: 1.1rem;
   }
 
+  .page-section__title {
+    font-size: 1.9rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
   .page-banner__title {
     font-size: 3rem;
   }
@@ -202,10 +226,6 @@ body.kr {
 }
 
 @media screen and (max-width: 768px) {
-  body {
-    font-size: 1rem;
-  }
-
   .page-footer__info {
     margin-bottom: 2rem;
   }
@@ -225,8 +245,16 @@ body.kr {
 }
 
 @media screen and (max-width: 576px) {
+  body {
+    font-size: 1rem;
+  }
+
+  .page-section__title {
+    font-size: 1.7rem;
+  }
+
   .page-banner__title {
-    font-size: 2rem;
+    font-size: 2.3rem;
     letter-spacing: 0.3rem;
   }
 

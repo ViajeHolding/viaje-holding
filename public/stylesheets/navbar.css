@@ -70,10 +70,6 @@ img.logo {
     font-size: 1.2rem;
     position: relative;
   }
-  img.logo {
-    width: 200px;
-    height: auto;
-  }
 }
 
 @media (max-width: 992px) {

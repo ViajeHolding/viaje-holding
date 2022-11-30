@@ -6,37 +6,39 @@
 <%- include('partials/header.ejs') %> <%- include('partials/navbar.ejs', { lang, data: navbar }) %>
 
 <body class="partnership <%= lang %>">
-  <section class="banner page-banner page-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-md-8 col-lg-6 col-xxl-7">
-          <h1 class="banner__title page-banner__title"><%= banner.title %></h1>
-      
-          <p class="banner__excerpt page-banner__excerpt"><%- banner.excerpt %></p>
-      
-          <button type="button" class="banner__action-btn page-banner__action-btn primary-btn btn"><%= banner.button %></button>
+  <main class="main-container">
+    <section class="banner page-banner page-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-8 col-lg-6 col-xxl-7">
+            <h1 class="banner__title page-banner__title"><%= banner.title %></h1>
+        
+            <p class="banner__excerpt page-banner__excerpt"><%- banner.excerpt %></p>
+        
+            <button type="button" class="banner__action-btn page-banner__action-btn primary-btn btn"><%= banner.button %></button>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-
-  <section class="partners container">
-    <div class="row">
-      <div class="col">
-        <h2 class="partners__title"><%- partners.title %></h2>
+    </section>
+  
+    <section class="partners container">
+      <div class="row">
+        <div class="col">
+          <h2 class="partners__title page-section__title"><%- partners.title %></h2>
+        </div>
       </div>
-    </div>
-
-    <div class="row partners__logo-row">
-      <div class="col-12 partners__logo-col partners__logo-col--mbi">
-        <img src="/img/MBI-logo.png" alt="MBI Logo" class="partners__logo-mbi" />
+  
+      <div class="row partners__logo-row">
+        <div class="col-12 partners__logo-col partners__logo-col--mbi">
+          <img src="/img/MBI-logo.png" alt="MBI Logo" class="partners__logo-mbi" />
+        </div>
+  
+        <div class="col-12 partners__logo-col partners__logo-col--partners">
+          <img src="/img/logo-partnership.png" alt="Partners Logo" class="partners__logo-partners" />
+        </div>
       </div>
-
-      <div class="col-12 partners__logo-col partners__logo-col--partners">
-        <img src="/img/logo-partnership.png" alt="Partners Logo" class="partners__logo-partners" />
-      </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
 <%- include('partials/footer.ejs', { lang, data: footer }) %>
 <%- include('partials/libraries.ejs') %>
