@@ -30,9 +30,16 @@ switch (lang) {
 }
 %>
 
-<%- include('partials/header.ejs') %> <%- include('partials/navbar.ejs', { lang, data: navbar }) %>
+<%- include('partials/header.ejs') %> 
 
 <body class="company-profile <%= lang %>">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MN7NWL6"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <%- include('partials/navbar.ejs', { lang, data: navbar }) %>
+
   <!-- HERO -->
 
   <div class="hero page-section">
